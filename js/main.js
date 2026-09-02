@@ -463,6 +463,11 @@ function openImageZoom(images, startIndex, productName) {
   document.body.appendChild(overlay);
   document.body.style.overflow = "hidden";
 
+  // Push a history entry so the phone/browser back button closes the viewer
+  // instead of navigating away from the product page entirely.
+  history.pushState({ zoomOverlay: true }, "");
+  window.addEventListener("popstate", onPopState);
+
   const img = overlay.querySelector(".zoom-image");
   const stage = overlay.querySelector(".zoom-stage");
   const fallback = overlay.querySelector(".zoom-fallback");
@@ -489,12 +494,22 @@ function openImageZoom(images, startIndex, productName) {
     img.src = images[index].src;
     img.alt = `${productName} — ${images[index].label}`;
   }
-  function close() {
+  function close(fromPopstate) {
+    if (overlay.dataset.closed) return; // avoid double-closing
+    overlay.dataset.closed = "true";
     document.body.style.overflow = "";
     document.removeEventListener("keydown", onKey);
     window.removeEventListener("mousemove", onMouseMove);
     window.removeEventListener("mouseup", onMouseUp);
+    window.removeEventListener("popstate", onPopState);
     overlay.remove();
+    // If we're closing via the X, backdrop, or Escape (not because the user
+    // already pressed back), consume the history entry we pushed above so
+    // back/forward navigation stays in sync with what's on screen.
+    if (!fromPopstate) history.back();
+  }
+  function onPopState() {
+    close(true);
   }
   function onKey(e) {
     if (e.key === "Escape") close();
