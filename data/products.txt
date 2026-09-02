@@ -1,0 +1,1787 @@
+# ==========================================================================
+# SULTAN FOOTBALL CLEATS — PRODUCT LIST
+# This is the ONLY place you need to edit to add, change, or remove a pair.
+# The website reads this file directly — no coding needed.
+#
+# HOW IT WORKS
+# Each product is a block of "Label: value" lines. One blank/dashed line
+# ("----------") separates one product from the next. Just copy a whole
+# block (from "Product ID:" down to the line of dashes after it), paste it
+# above or below, and edit the values for the new pair.
+#
+# Any line starting with "#" (like these) is just a note and is ignored —
+# feel free to leave them or delete them.
+#
+# FIELD GUIDE
+#   Product ID     — must be unique for every pair, e.g. p1, p2, p3...
+#                     If you're adding a new pair, use the next free number.
+#   Name           — shoe name, e.g. NIKE Phantom GX
+#   Brand          — e.g. NIKE, ADIDAS, PUMA
+#   Category       — must be exactly one of:
+#                       adult-studs
+#                       kids-studs
+#                       adult-grippers
+#                       kids-grippers
+#   Tag            — small badge on the card, e.g. Like New, Best Deal.
+#                     Leave blank for no badge.
+#   Color          — e.g. Black & White
+#   Size US / UK / EUR — this pair's one size (every pair is a single unit)
+#   Condition (out of 10) — a number 1–10. This is what turns into the
+#                     star rating shown to customers (10 = 5 stars,
+#                     9 = 4.5 stars, 8 = 4 stars, and so on).
+#   Fault          — write "None" if there's nothing to note, or a short
+#                     honest note like "Slight scuffing on the toe"
+#   Price (PKR)    — the selling price in rupees, just the number
+#                     (e.g. 3900 — no "Rs." or commas)
+#   Original Price (PKR) — the crossed-out "before" price, if any.
+#                     Leave blank if there isn't one.
+#   Image          — file path to the photo, e.g. assets/products/p2.jpg
+#                     For MULTIPLE ANGLES, list several paths separated by
+#                     commas on this same line, e.g.:
+#                       Image: assets/products/p2.jpg, assets/products/p2-side.jpg, assets/products/p2-sole.jpg
+#                     The first one is used as the card/thumbnail photo; all
+#                     of them appear as clickable thumbnails on the product
+#                     page. (See assets/products/README.txt for how to add
+#                     the actual photo files.)
+#   Video          — file path to a video, or leave blank
+#   Description    — one honest sentence about the shoe. Don't repeat the
+#                     condition here — the star rating already shows that.
+#
+# When you're done editing, just save this file. Refresh the website and
+# your changes are live — nothing else to touch.
+# ==========================================================================
+
+Product ID: p1
+Name: ADIDAS Copa Mundial
+Brand: ADIDAS
+Category: adult-studs
+Tag: Like New
+Color: Black & White
+Size US: 10
+Size UK: 9.5
+Size EUR: 44
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3900
+Original Price (PKR): 6500
+Image: assets/products/p1 (1).jpg, assets/products/p1 (2).jpg, assets/products/p1 (3).jpg, assets/products/p1 (4).jpg, assets/products/p1 (5).jpg, assets/products/p1 (6).jpg, assets/products/p1 (7).jpg, assets/products/p1 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Copa Mundial in Black & White.
+----------------------------------------
+Product ID: p2
+Name: ADIDAS Copa Sense.3 FG
+Brand: ADIDAS
+Category: kids-studs
+Tag: 
+Color: Black with White Stripes
+Size US: 5
+Size UK: 4.5
+Size EUR: 37.5
+Condition (out of 10): 8
+Fault: Slight signs of wear
+Price (PKR): 2200
+Original Price (PKR): 4000
+Image: assets/products/p2 (1).jpg, assets/products/p2 (2).jpg, assets/products/p2 (3).jpg, assets/products/p2 (4).jpg, assets/products/p2 (5).jpg, assets/products/p2 (6).jpg, assets/products/p2 (7).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Copa Sense.3 FG in Black with White Stripes.
+----------------------------------------
+Product ID: p3
+Name: ADIDAS Goletto VII
+Brand: ADIDAS
+Category: kids-grippers
+Tag: 
+Color: navy Blue With White Stripes
+Size US: 6
+Size UK: 5.5
+Size EUR: 38.75
+Condition (out of 10): 9
+Fault: Slighlty worn
+Price (PKR): 3500
+Original Price (PKR): 5000
+Image: assets/products/p3 (1).jpg, assets/products/p3 (2).jpg, assets/products/p3 (3).jpg, assets/products/p3 (4).jpg, assets/products/p3 (5).jpg, assets/products/p3 (6).jpg, assets/products/p3 (7).jpg, assets/products/p3 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Goletto VII in navy Blue With White Stripes.
+----------------------------------------
+Product ID: p4
+Name: ADIDAS Nitrocharge 1.0
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black, Silver, Orange & Green
+Size US: 11.5
+Size UK: 11
+Size EUR: 45
+Condition (out of 10): 8
+Fault: Some stiching on one side of left shoe
+Price (PKR): 2800
+Original Price (PKR): 4999
+Image: assets/products/p4 (1).jpg, assets/products/p4 (2).jpg, assets/products/p4 (3).jpg, assets/products/p4 (4).jpg, assets/products/p4 (5).jpg, assets/products/p4 (6).jpg, assets/products/p4 (7).jpg, assets/products/p4 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Nitrocharge 1.0 in Black, Silver, Orange & Green.
+----------------------------------------
+Product ID: p5
+Name: ADIDAS Predator 19.3
+Brand: ADIDAS
+Category: kids-grippers
+Tag: 
+Color: Black
+Size US: 6
+Size UK: 5.5
+Size EUR: 38.75
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3000
+Original Price (PKR): 3999
+Image: assets/products/p5 (1).jpg, assets/products/p5 (2).jpg, assets/products/p5 (3).jpg, assets/products/p5 (4).jpg, assets/products/p5 (5).jpg, assets/products/p5 (6).jpg, assets/products/p5 (7).jpg, assets/products/p5 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Predator 19.3 in Black.
+----------------------------------------
+Product ID: p6
+Name: CANTERBURY Phoenix Raze SG
+Brand: CANTERBURY
+Category: kids-studs
+Tag: 
+Color: Black & White logo
+Size US: 6
+Size UK: 5.5
+Size EUR: 38.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 2800
+Original Price (PKR): 4300
+Image: assets/products/p6 (1).jpg, assets/products/p6 (2).jpg, assets/products/p6 (3).jpg, assets/products/p6 (4).jpg, assets/products/p6 (5).jpg, assets/products/p6 (6).jpg, assets/products/p6 (7).jpg, assets/products/p6 (8).jpg
+Video: 
+Description: A genuine pre-owned CANTERBURY Phoenix Raze SG in Black & White logo.
+----------------------------------------
+Product ID: p7
+Name: CLARKS Award Swift
+Brand: CLARKS
+Category: kids-grippers
+Tag: 
+Color: Black
+Size US: 5.5
+Size UK: 5
+Size EUR: 38
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3000
+Original Price (PKR): 4000
+Image: assets/products/p7 (1).jpg, assets/products/p7 (2).jpg, assets/products/p7 (3).jpg, assets/products/p7 (4).jpg, assets/products/p7 (5).jpg, assets/products/p7 (6).jpg, assets/products/p7 (7).jpg, assets/products/p7 (8).jpg
+Video: 
+Description: A genuine pre-owned CLARKS Award Swift in Black.
+----------------------------------------
+Product ID: p8
+Name: GRAYS Flash
+Brand: GRAYS
+Category: adult-grippers
+Tag: 
+Color: Pink & Black
+Size US: 7
+Size UK: 6
+Size EUR: 39.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3000
+Original Price (PKR): 3999
+Image: assets/products/p8 (1).jpg, assets/products/p8 (2).jpg, assets/products/p8 (3).jpg, assets/products/p8 (4).jpg, assets/products/p8 (5).jpg, assets/products/p8 (6).jpg, assets/products/p8 (7).jpg, assets/products/p8 (8).jpg
+Video: 
+Description: A genuine pre-owned GRAYS Flash in Pink & Black.
+----------------------------------------
+Product ID: p9
+Name: KIPSTA Decathlon Agility
+Brand: KIPSTA
+Category: adult-grippers
+Tag: 
+Color: Black with White Graphics
+Size US: 8.5
+Size UK: 7.5
+Size EUR: 41
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3000
+Original Price (PKR): 3599
+Image: assets/products/p9 (1).jpg, assets/products/p9 (2).jpg, assets/products/p9 (3).jpg, assets/products/p9 (4).jpg, assets/products/p9 (5).jpg, assets/products/p9 (6).jpg, assets/products/p9 (7).jpg
+Video: 
+Description: A genuine pre-owned KIPSTA Decathlon Agility in Black with White Graphics.
+----------------------------------------
+Product ID: p10
+Name: KIPSTA Decathlon Agility
+Brand: KIPSTA
+Category: kids-studs
+Tag: 
+Color: Black with Red
+Size US: 5.5
+Size UK: 4.5
+Size EUR: 37.5
+Condition (out of 10): 9
+Fault: Some studs are worn off
+Price (PKR): 2200
+Original Price (PKR): 3200
+Image: assets/products/p10 (1).jpg, assets/products/p10 (2).jpg, assets/products/p10 (3).jpg, assets/products/p10 (4).jpg, assets/products/p10 (5).jpg, assets/products/p10 (6).jpg, assets/products/p10 (7).jpg
+Video: 
+Description: A genuine pre-owned KIPSTA Decathlon Agility in Black with Red.
+----------------------------------------
+Product ID: p11
+Name: KNOCK OFFS X CR8
+Brand: Knock Offs
+Category: adult-grippers
+Tag: 
+Color: Electric Green
+Size US: 10
+Size UK: 9
+Size EUR: 43
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3200
+Original Price (PKR): 3500
+Image: assets/products/p11 (1).jpg, assets/products/p11 (2).jpg, assets/products/p11 (3).jpg, assets/products/p11 (4).jpg, assets/products/p11 (5).jpg, assets/products/p11 (6).jpg, assets/products/p11 (7).jpg
+Video: 
+Description: A pre-owned KNOCK OFFS X CR8 replica in Electric Green.
+----------------------------------------
+Product ID: p12
+Name: KNOCK OFFS X NIKE Air 2025
+Brand: Knock Offs
+Category: adult-studs
+Tag: 
+Color: White & Light Blue
+Size US: 10
+Size UK: 9.5
+Size EUR: 44
+Condition (out of 10): 7
+Fault: Some studs are worn off
+Price (PKR): 2200
+Original Price (PKR): 3500
+Image: assets/products/p12 (1).jpg, assets/products/p12 (2).jpg, assets/products/p12 (3).jpg, assets/products/p12 (4).jpg, assets/products/p12 (5).jpg, assets/products/p12 (6).jpg, assets/products/p12 (7).jpg, assets/products/p12 (8).jpg
+Video: 
+Description: A pre-owned KNOCK OFFS X NIKE Air 2025 replica in White & Light Blue.
+----------------------------------------
+Product ID: p13
+Name: NEW BALANCE White Freeze LX
+Brand: NEW BALANCE
+Category: adult-studs
+Tag: 
+Color: White & Grey
+Size US: 10
+Size UK: 9
+Size EUR: 44
+Condition (out of 10): 9
+Fault: Slight wear on the front of left shoe
+Price (PKR): 3700
+Original Price (PKR): 6000
+Image: assets/products/p13 (1).jpg, assets/products/p13 (2).jpg, assets/products/p13 (3).jpg, assets/products/p13 (4).jpg, assets/products/p13 (5).jpg, assets/products/p13 (6).jpg, assets/products/p13 (7).jpg, assets/products/p13 (8).jpg
+Video: 
+Description: A genuine pre-owned NEW BALANCE White Freeze LX in White & Grey.
+----------------------------------------
+Product ID: p14
+Name: NIKE Jr Phantom Venom
+Brand: NIKE
+Category: kids-studs
+Tag: 
+Color: Lime Green with Black NIKE logo
+Size US: 5.5
+Size UK: 5
+Size EUR: 38
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3200
+Original Price (PKR): 5400
+Image: assets/products/p14 (1).jpg, assets/products/p14 (2).jpg, assets/products/p14 (3).jpg, assets/products/p14 (4).jpg, assets/products/p14 (5).jpg, assets/products/p14 (6).jpg, assets/products/p14 (7).jpg, assets/products/p14 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Jr Phantom Venom in Lime Green with Black NIKE logo.
+----------------------------------------
+Product ID: p15
+Name: NIKE Mercurial Vapor 14
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Red & Green
+Size US: 8
+Size UK: 7
+Size EUR: 41
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 7000
+Image: assets/products/p15 (1).jpg, assets/products/p15 (2).jpg, assets/products/p15 (3).jpg, assets/products/p15 (4).jpg, assets/products/p15 (5).jpg, assets/products/p15 (6).jpg, assets/products/p15 (7).jpg, assets/products/p15 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Vapor 14 in Red & Green.
+----------------------------------------
+Product ID: p16
+Name: NIKE Mercurial Vapor V
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Purple & White
+Size US: 9
+Size UK: 8
+Size EUR: 43
+Condition (out of 10): 9
+Fault: Slight wear here & there
+Price (PKR): 3500
+Original Price (PKR): 5400
+Image: assets/products/p16 (1).jpg, assets/products/p16 (2).jpg, assets/products/p16 (3).jpg, assets/products/p16 (4).jpg, assets/products/p16 (5).jpg, assets/products/p16 (6).jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Vapor V in Purple & White.
+----------------------------------------
+Product ID: p17
+Name: NIKE MercurialX Finale II
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Black & Electric Green
+Size US: 10
+Size UK: 9
+Size EUR: 43
+Condition (out of 10): 6
+Fault: Many repairs made in the front of both shoes
+Price (PKR): 2200
+Original Price (PKR): 3400
+Image: assets/products/p17 (1).jpg, assets/products/p17 (2).jpg, assets/products/p17 (3).jpg, assets/products/p17 (4).jpg, assets/products/p17 (5).jpg, assets/products/p17 (6).jpg, assets/products/p17 (7).jpg, assets/products/p17 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE MercurialX Finale II in Black & Electric Green.
+----------------------------------------
+Product ID: p18
+Name: PUMA Capitano
+Brand: PUMA
+Category: adult-grippers
+Tag: 
+Color: Black & White
+Size US: 8.5
+Size UK: 7.5
+Size EUR: 41
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3000
+Original Price (PKR): 4300
+Image: assets/products/p18 (1).jpg, assets/products/p18 (2).jpg, assets/products/p18 (3).jpg, assets/products/p18 (4).jpg, assets/products/p18 (5).jpg, assets/products/p18 (6).jpg, assets/products/p18 (7).jpg, assets/products/p18 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA Capitano in Black & White.
+----------------------------------------
+Product ID: p19
+Name: PUMA Powercat 3.10
+Brand: PUMA
+Category: adult-studs
+Tag: 
+Color: Black & Neon Green
+Size US: 14
+Size UK: 13
+Size EUR: 48.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6000
+Image: assets/products/p19 (1).jpg, assets/products/p19 (2).jpg, assets/products/p19 (3).jpg, assets/products/p19 (4).jpg, assets/products/p19 (5).jpg, assets/products/p19 (6).jpg, assets/products/p19 (7).jpg, assets/products/p19 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA Powercat 3.10 in Black & Neon Green.
+----------------------------------------
+Product ID: p20
+Name: UMBRO Calcio
+Brand: UMBRO
+Category: kids-grippers
+Tag: 
+Color: Black & White
+Size US: 5.5
+Size UK: 5
+Size EUR: 38
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3500
+Original Price (PKR): 4500
+Image: assets/products/p20 (1).jpg, assets/products/p20 (2).jpg, assets/products/p20 (3).jpg, assets/products/p20 (4).jpg, assets/products/p20 (5).jpg, assets/products/p20 (6).jpg, assets/products/p20 (7).jpg, assets/products/p20 (8).jpg
+Video: 
+Description: A genuine pre-owned UMBRO Calcio in Black & White.
+----------------------------------------
+Product ID: p21
+Name: UNDER ARMOUR Magnetico Pro
+Brand: UNDER ARMOUR
+Category: adult-studs
+Tag: 
+Color: Black & Sliver
+Size US: 14
+Size UK: 13
+Size EUR: 48.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6000
+Image: assets/products/p21 (1).jpg, assets/products/p21 (2).jpg, assets/products/p21 (3).jpg, assets/products/p21 (4).jpg, assets/products/p21 (5).jpg, assets/products/p21 (6).jpg, assets/products/p21 (7).jpg, assets/products/p21 (8).jpg
+Video: 
+Description: A genuine pre-owned UNDER ARMOUR Magnetico Pro in Black & Sliver.
+----------------------------------------
+Product ID: p22
+Name: XBLADES Intercept Flash
+Brand: XBLADES
+Category: kids-studs
+Tag: 
+Color: Pink & Blue
+Size US: 5
+Size UK: 4
+Size EUR: 37
+Condition (out of 10): 9
+Fault: Some wear on front of right shoe
+Price (PKR): 2900
+Original Price (PKR): 4500
+Image: assets/products/p22 (1).jpg, assets/products/p22 (2).jpg, assets/products/p22 (3).jpg, assets/products/p22 (4).jpg, assets/products/p22 (5).jpg, assets/products/p22 (6).jpg, assets/products/p22 (7).jpg, assets/products/p22 (8).jpg
+Video: 
+Description: A genuine pre-owned XBLADES Intercept Flash in Pink & Blue.
+----------------------------------------
+Product ID: p23
+Name: ADIDAS Copa Mundial
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black & White
+Size US: 10
+Size UK: 9.5
+Size EUR: 44
+Condition (out of 10): 8
+Fault: Some repairs made
+Price (PKR): 3500
+Original Price (PKR): 5500
+Image: assets/products/p23 (1).jpg, assets/products/p23 (2).jpg, assets/products/p23 (3).jpg, assets/products/p23 (4).jpg, assets/products/p23 (5).jpg, assets/products/p23 (6).jpg, assets/products/p23 (7).jpg, assets/products/p23 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Copa Mundial in Black & White.
+----------------------------------------
+Product ID: p24
+Name: ADIDAS Predator Accuracy.3
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black
+Size US: 12.5
+Size UK: 12
+Size EUR: 47.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3000
+Original Price (PKR): 5400
+Image: assets/products/p24 (1).jpg, assets/products/p24 (2).jpg, assets/products/p24 (3).jpg, assets/products/p24 (4).jpg, assets/products/p24 (5).jpg, assets/products/p24 (6).jpg, assets/products/p24 (7).jpg, assets/products/p24 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Predator Accuracy.3 in Black.
+----------------------------------------
+Product ID: p25
+Name: CANTERBURY Phoenix 2.0 SG
+Brand: CANTERBURY
+Category: adult-studs
+Tag: 
+Color: Black with Red
+Size US: 14
+Size UK: 13
+Size EUR: 48.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3700
+Original Price (PKR): 6200
+Image: assets/products/p25 (1).jpg, assets/products/p25 (2).jpg, assets/products/p25 (3).jpg, assets/products/p25 (4).jpg, assets/products/p25 (5).jpg, assets/products/p25 (6).jpg, assets/products/p25 (7).jpg, assets/products/p25 (8).jpg
+Video: 
+Description: A genuine pre-owned CANTERBURY Phoenix 2.0 SG in Black with Red.
+----------------------------------------
+Product ID: p26
+Name: PUMA Future 7 Ultimate
+Brand: PUMA
+Category: adult-studs
+Tag: 
+Color: White to Pink Gradient
+Size US: 10.5
+Size UK: 9.5
+Size EUR: 44
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4500
+Original Price (PKR): 7000
+Image: assets/products/p26 (1).jpg, assets/products/p26 (2).jpg, assets/products/p26 (3).jpg, assets/products/p26 (4).jpg, assets/products/p26 (5).jpg, assets/products/p26 (6).jpg, assets/products/p26 (7).jpg, assets/products/p26 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA Future 7 Ultimate in White to Pink Gradient.
+----------------------------------------
+Product ID: p27
+Name: NIKE Mercurial Superfly 8 Club
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Black & Silver
+Size US: 7
+Size UK: 6
+Size EUR: 40
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 5600
+Image: assets/products/p27 (1).jpg, assets/products/p27 (2).jpg, assets/products/p27 (3).jpg, assets/products/p27 (4).jpg, assets/products/p27 (5).jpg, assets/products/p27 (6).jpg, assets/products/p27 (7).jpg, assets/products/p27 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Superfly 8 Club in Black & Silver.
+----------------------------------------
+Product ID: p28
+Name: NIKE Mercurial Vapor 14
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: White with Blue NIKE logo
+Size US: 7
+Size UK: 6
+Size EUR: 40
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3500
+Original Price (PKR): 6500
+Image: assets/products/p28 (1).jpg, assets/products/p28 (2).jpg, assets/products/p28 (3).jpg, assets/products/p28 (4).jpg, assets/products/p28 (5).jpg, assets/products/p28 (6).jpg, assets/products/p28 (7).jpg, assets/products/p28 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Vapor 14 in White with Blue NIKE logo.
+----------------------------------------
+Product ID: p29
+Name: PUMA Future Ultimate
+Brand: PUMA
+Category: adult-studs
+Tag: 
+Color: Yellow & Grey
+Size US: 12
+Size UK: 11
+Size EUR: 46
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4500
+Original Price (PKR): 8500
+Image: assets/products/p29 (1).jpg, assets/products/p29 (2).jpg, assets/products/p29 (3).jpg, assets/products/p29 (4).jpg, assets/products/p29 (5).jpg, assets/products/p29 (6).jpg, assets/products/p29 (7).jpg, assets/products/p29 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA Future Ultimate in Yellow & Grey.
+----------------------------------------
+Product ID: p30
+Name: ADIDAS Speedportal.3
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black & Orange
+Size US: 10
+Size UK: 9.5
+Size EUR: 44
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4500
+Original Price (PKR): 8500
+Image: assets/products/p30 (1).jpg, assets/products/p30 (2).jpg, assets/products/p30 (3).jpg, assets/products/p30 (4).jpg, assets/products/p30 (5).jpg, assets/products/p30 (6).jpg, assets/products/p30 (7).jpg, assets/products/p30 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Speedportal.3 in Black & Orange.
+----------------------------------------
+Product ID: p31
+Name: NIKE Tiempo Legend 9 Elite
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: White  & Red
+Size US: 8
+Size UK: 7
+Size EUR: 41
+Condition (out of 10): 9
+Fault: Slightly worn off from the front
+Price (PKR): 3500
+Original Price (PKR): 5600
+Image: assets/products/p31 (1).jpg, assets/products/p31 (2).jpg, assets/products/p31 (3).jpg, assets/products/p31 (4).jpg, assets/products/p31 (5).jpg, assets/products/p31 (6).jpg, assets/products/p31 (7).jpg, assets/products/p31 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Tiempo Legend 9 Elite in White  & Red.
+----------------------------------------
+Product ID: p32
+Name: ADIDAS Predator Edge
+Brand: ADIDAS
+Category: kids-studs
+Tag: 
+Color: Red & Green
+Size US: 5.5
+Size UK: 5
+Size EUR: 38
+Condition (out of 10): 9
+Fault: Slight wear in the front
+Price (PKR): 3200
+Original Price (PKR): 4500
+Image: assets/products/p32 (1).jpg, assets/products/p32 (2).jpg, assets/products/p32 (3).jpg, assets/products/p32 (4).jpg, assets/products/p32 (5).jpg, assets/products/p32 (6).jpg, assets/products/p32 (7).jpg, assets/products/p32 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Predator Edge in Red & Green.
+----------------------------------------
+Product ID: p33
+Name: NIKE Air Zoom Mercurial Vapor 15
+Brand: NIKE
+Category: kids-studs
+Tag: 
+Color: Black & Blue
+Size US: 6
+Size UK: 5.5
+Size EUR: 38.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3500
+Original Price (PKR): 6999
+Image: assets/products/p33 (1).jpg, assets/products/p33 (2).jpg, assets/products/p33 (3).jpg, assets/products/p33 (4).jpg, assets/products/p33 (5).jpg, assets/products/p33 (6).jpg, assets/products/p33 (7).jpg, assets/products/p33 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Air Zoom Mercurial Vapor 15 in Black & Blue.
+----------------------------------------
+Product ID: p34
+Name: PUMA Finesse Laceless
+Brand: PUMA
+Category: kids-studs
+Tag: 
+Color: Black & Yellow
+Size US: 5
+Size UK: 4
+Size EUR: 37
+Condition (out of 10): 9
+Fault: Slightly worn
+Price (PKR): 2500
+Original Price (PKR): 5500
+Image: assets/products/p34 (1).jpg, assets/products/p34 (2).jpg, assets/products/p34 (3).jpg, assets/products/p34 (4).jpg, assets/products/p34 (5).jpg, assets/products/p34 (6).jpg, assets/products/p34 (7).jpg, assets/products/p34 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA Finesse Laceless in Black & Yellow.
+----------------------------------------
+Product ID: p35
+Name: ADIDAS CrazyFast League
+Brand: ADIDAS
+Category: kids-studs
+Tag: 
+Color: Neon Green & Red
+Size US: 4.5
+Size UK: 4
+Size EUR: 37
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3300
+Original Price (PKR): 4500
+Image: assets/products/p35 (1).jpg, assets/products/p35 (2).jpg, assets/products/p35 (3).jpg, assets/products/p35 (4).jpg, assets/products/p35 (5).jpg, assets/products/p35 (6).jpg, assets/products/p35 (7).jpg, assets/products/p35 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS CrazyFast League in Neon Green & Red.
+----------------------------------------
+Product ID: p36
+Name: PUMA Finesse Laceless
+Brand: PUMA
+Category: kids-studs
+Tag: Best Deal
+Color: Black & Yellow
+Size US: 5
+Size UK: 4
+Size EUR: 37
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3000
+Original Price (PKR): 6899
+Image: assets/products/p36 (1).jpg, assets/products/p36 (2).jpg, assets/products/p36 (3).jpg, assets/products/p36 (4).jpg, assets/products/p36 (5).jpg, assets/products/p36 (6).jpg, assets/products/p36 (7).jpg, assets/products/p36 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA Finesse Laceless in Black & Yellow.
+----------------------------------------
+Product ID: p37
+Name: NIKE Air Zoom Mercurial Vapor 15
+Brand: NIKE
+Category: kids-studs
+Tag: Best Deal
+Color: Black & Blue
+Size US: 5
+Size UK: 4.5
+Size EUR: 37.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3500
+Original Price (PKR): 7599
+Image: assets/products/p37 (1).jpg, assets/products/p37 (2).jpg, assets/products/p37 (3).jpg, assets/products/p37 (4).jpg, assets/products/p37 (5).jpg, assets/products/p37 (6).jpg, assets/products/p37 (7).jpg, assets/products/p37 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Air Zoom Mercurial Vapor 15 in Black & Blue.
+----------------------------------------
+Product ID: p38
+Name: ADIDAS Messi 15.4
+Brand: ADIDAS
+Category: kids-studs
+Tag: 
+Color: Light Blue & Yellow
+Size US: 6
+Size UK: 5.5
+Size EUR: 38.75
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3200
+Original Price (PKR): 5400
+Image: assets/products/p38 (1).jpg, assets/products/p38 (2).jpg, assets/products/p38 (3).jpg, assets/products/p38 (4).jpg, assets/products/p38 (5).jpg, assets/products/p38 (6).jpg, assets/products/p38 (7).jpg, assets/products/p38 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Messi 15.4 in Light Blue & Yellow.
+----------------------------------------
+Product ID: p39
+Name: NIKE Mercurial Superfly 8
+Brand: NIKE
+Category: kids-grippers
+Tag: 
+Color: Black & Silver
+Size US: 5
+Size UK: 4.5
+Size EUR: 37.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3000
+Original Price (PKR): 5500
+Image: assets/products/p39 (1).jpg, assets/products/p39 (2).jpg, assets/products/p39 (3).jpg, assets/products/p39 (4).jpg, assets/products/p39 (5).jpg, assets/products/p39 (6).jpg, assets/products/p39 (7).jpg, assets/products/p39 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Superfly 8 in Black & Silver.
+----------------------------------------
+Product ID: p40
+Name: NIKE Tiempo Legend II
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Black & White
+Size US: 9
+Size UK: 8
+Size EUR: 42.5
+Condition (out of 10): 9
+Fault: Some Parts worn
+Price (PKR): 3200
+Original Price (PKR): 6500
+Image: assets/products/p40 (1).jpg, assets/products/p40 (2).jpg, assets/products/p40 (3).jpg, assets/products/p40 (4).jpg, assets/products/p40 (5).jpg, assets/products/p40 (6).jpg, assets/products/p40 (7).jpg, assets/products/p40 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Tiempo Legend II in Black & White.
+----------------------------------------
+Product ID: p41
+Name: NIKE Bobma
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Silver & Green
+Size US: 9.5
+Size UK: 8.5
+Size EUR: 43
+Condition (out of 10): 9
+Fault: Slightly Repaired
+Price (PKR): 3000
+Original Price (PKR): 6300
+Image: assets/products/p41 (1).jpg, assets/products/p41 (2).jpg, assets/products/p41 (3).jpg, assets/products/p41 (4).jpg, assets/products/p41 (5).jpg, assets/products/p41 (6).jpg, assets/products/p41 (7).jpg, assets/products/p41 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Bobma in Silver & Green.
+----------------------------------------
+Product ID: p42
+Name: UMBRO Vintage Speciali
+Brand: UMBRO
+Category: adult-grippers
+Tag: 
+Color: Black
+Size US: 11
+Size UK: 10
+Size EUR: 45
+Condition (out of 10): 7
+Fault: Some repairs made
+Price (PKR): 3000
+Original Price (PKR): 5400
+Image: assets/products/p42 (1).jpg, assets/products/p42 (2).jpg, assets/products/p42 (3).jpg, assets/products/p42 (4).jpg, assets/products/p42 (5).jpg, assets/products/p42 (6).jpg, assets/products/p42 (7).jpg, assets/products/p42 (8).jpg
+Video: 
+Description: A genuine pre-owned UMBRO Vintage Speciali in Black.
+----------------------------------------
+Product ID: p43
+Name: NIKE Magista Onda II
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Black & Blue
+Size US: 11
+Size UK: 10
+Size EUR: 45
+Condition (out of 10): 8
+Fault: Some parts worn off
+Price (PKR): 3000
+Original Price (PKR): 5200
+Image: assets/products/p43 (1).jpg, assets/products/p43 (2).jpg, assets/products/p43 (3).jpg, assets/products/p43 (4).jpg, assets/products/p43 (5).jpg, assets/products/p43 (6).jpg, assets/products/p43 (7).jpg, assets/products/p43 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Magista Onda II in Black & Blue.
+----------------------------------------
+Product ID: p44
+Name: KIPSTA Agility 100
+Brand: KIPSTA
+Category: adult-studs
+Tag: 
+Color: Black & White
+Size US: 13
+Size UK: 12
+Size EUR: 47
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3500
+Original Price (PKR): 6300
+Image: assets/products/p44 (1).jpg, assets/products/p44 (2).jpg, assets/products/p44 (3).jpg, assets/products/p44 (4).jpg, assets/products/p44 (5).jpg, assets/products/p44 (6).jpg, assets/products/p44 (7).jpg, assets/products/p44 (8).jpg
+Video: 
+Description: A genuine pre-owned KIPSTA Agility 100 in Black & White.
+----------------------------------------
+Product ID: p45
+Name: ADIDAS Vintage Apollo
+Brand: ADIDAS
+Category: adult-grippers
+Tag: 
+Color: Beige, Black & Orange
+Size US: 9.5
+Size UK: 9
+Size EUR: 43.33
+Condition (out of 10): 9
+Fault: Slightly Stiched from the front
+Price (PKR): 3000
+Original Price (PKR): 6500
+Image: assets/products/p45 (1).jpg, assets/products/p45 (2).jpg, assets/products/p45 (3).jpg, assets/products/p45 (4).jpg, assets/products/p45 (5).jpg, assets/products/p45 (6).jpg, assets/products/p45 (7).jpg, assets/products/p45 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Vintage Apollo in Beige, Black & Orange.
+----------------------------------------
+Product ID: p46
+Name: BIAYVISAS Football grippers
+Brand: BIAYVISAS
+Category: kids-grippers
+Tag: 
+Color: Gold & Black
+Size US: 5
+Size UK: 4
+Size EUR: 37
+Condition (out of 10): 9
+Fault: Slightly worn
+Price (PKR): 2300
+Original Price (PKR): 4000
+Image: assets/products/p46 (1).jpg, assets/products/p46 (2).jpg, assets/products/p46 (3).jpg, assets/products/p46 (4).jpg, assets/products/p46 (5).jpg, assets/products/p46 (6).jpg, assets/products/p46 (7).jpg
+Video: 
+Description: A genuine pre-owned BIAYVISAS Football grippers in Gold & Black.
+----------------------------------------
+Product ID: p47
+Name: ADIDAS X19.3
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Blue & White
+Size US: 7.5
+Size UK: 7
+Size EUR: 40.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4500
+Original Price (PKR): 5999
+Image: assets/products/p47 (1).jpg, assets/products/p47 (2).jpg, assets/products/p47 (3).jpg, assets/products/p47 (4).jpg, assets/products/p47 (5).jpg, assets/products/p47 (6).jpg, assets/products/p47 (7).jpg, assets/products/p47 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS X19.3 in Blue & White.
+----------------------------------------
+Product ID: p49
+Name: ADIDAS Predator Accuracy.4
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Blue & Light Blue
+Size US: 9.5
+Size UK: 9
+Size EUR: 43.25
+Condition (out of 10): 8
+Fault: Slighltly repaired from front
+Price (PKR): 4500
+Original Price (PKR): 6500
+Image: assets/products/p49 (1).jpg, assets/products/p49 (2).jpg, assets/products/p49 (3).jpg, assets/products/p49 (4).jpg, assets/products/p49 (5).jpg, assets/products/p49 (6).jpg, assets/products/p49 (7).jpg, assets/products/p49 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Predator Accuracy.4 in Blue & Light Blue.
+----------------------------------------
+Product ID: p50
+Name: NIKE Force Savage Elite TD
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Black & Blue
+Size US: 12
+Size UK: 11
+Size EUR: 46
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5000
+Original Price (PKR): 9999
+Image: assets/products/p50 (1).jpg, assets/products/p50 (2).jpg, assets/products/p50 (3).jpg, assets/products/p50 (4).jpg, assets/products/p50 (5).jpg, assets/products/p50 (6).jpg, assets/products/p50 (7).jpg
+Video: 
+Description: A genuine pre-owned NIKE Force Savage Elite TD in Black & Blue.
+----------------------------------------
+Product ID: p51
+Name: ADIDAS ACE 16.1
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Neon Yellow & Black
+Size US: 9.5
+Size UK: 9
+Size EUR: 43.25
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p51 (1).jpg, assets/products/p51 (2).jpg, assets/products/p51 (3).jpg, assets/products/p51 (4).jpg, assets/products/p51 (5).jpg, assets/products/p51 (6).jpg, assets/products/p51 (7).jpg, assets/products/p51 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS ACE 16.1 in Neon Yellow & Black.
+----------------------------------------
+Product ID: p52
+Name: PUMA Future 2.3 Netfit
+Brand: PUMA
+Category: adult-studs
+Tag: 
+Color: Teal & Grey
+Size US: 9.5
+Size UK: 8.5
+Size EUR: 43
+Condition (out of 10): 9
+Fault: Left shoe slightly repaired from the front
+Price (PKR): 4500
+Original Price (PKR): 8000
+Image: assets/products/p52 (1).jpg, assets/products/p52 (2).jpg, assets/products/p52 (3).jpg, assets/products/p52 (4).jpg, assets/products/p52 (5).jpg, assets/products/p52 (6).jpg, assets/products/p52 (7).jpg, assets/products/p52 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA Future 2.3 Netfit in Teal & Grey.
+----------------------------------------
+Product ID: p53
+Name: NIKE Hypervenom Phantom
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Green & Black
+Size US: 8.5
+Size UK: 7.5
+Size EUR: 42
+Condition (out of 10): 8
+Fault: Slighltly repaired studs
+Price (PKR): 4300
+Original Price (PKR): 7500
+Image: assets/products/p53 (1).jpg, assets/products/p53 (2).jpg, assets/products/p53 (3).jpg, assets/products/p53 (4).jpg, assets/products/p53 (5).jpg, assets/products/p53 (6).jpg, assets/products/p53 (7).jpg
+Video: 
+Description: A genuine pre-owned NIKE Hypervenom Phantom in Green & Black.
+----------------------------------------
+Product ID: p54
+Name: PUMA Future Play
+Brand: PUMA
+Category: adult-studs
+Tag: 
+Color: Blue & Orange
+Size US: 9
+Size UK: 8
+Size EUR: 42
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4500
+Original Price (PKR): 6500
+Image: assets/products/p54 (1).jpg, assets/products/p54 (2).jpg, assets/products/p54 (3).jpg, assets/products/p54 (4).jpg, assets/products/p54 (5).jpg, assets/products/p54 (6).jpg, assets/products/p54 (7).jpg, assets/products/p54 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA Future Play in Blue & Orange.
+----------------------------------------
+Product ID: p55
+Name: ADIDAS Nemeziz 18.1
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Neon Yellow & Blue
+Size US: 10
+Size UK: 9.5
+Size EUR: 44
+Condition (out of 10): 9
+Fault: Left shoe slightly repaired from the front
+Price (PKR): 3800
+Original Price (PKR): 6500
+Image: assets/products/p55 (1).jpg, assets/products/p55 (2).jpg, assets/products/p55 (3).jpg, assets/products/p55 (4).jpg, assets/products/p55 (5).jpg, assets/products/p55 (6).jpg, assets/products/p55 (7).jpg, assets/products/p55 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Nemeziz 18.1 in Neon Yellow & Blue.
+----------------------------------------
+Product ID: p56
+Name: NIKE Phantom GT2
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Black & Volt
+Size US: 8
+Size UK: 7
+Size EUR: 41
+Condition (out of 10): 9
+Fault: Some studs are worn off
+Price (PKR): 3700
+Original Price (PKR): 5400
+Image: assets/products/p56 (1).jpg, assets/products/p56 (2).jpg, assets/products/p56 (3).jpg, assets/products/p56 (4).jpg, assets/products/p56 (5).jpg, assets/products/p56 (6).jpg, assets/products/p56 (7).jpg, assets/products/p56 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Phantom GT2 in Black & Volt.
+----------------------------------------
+Product ID: p57
+Name: NIKE Tiempo Legend 10
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: White & Red
+Size US: 11
+Size UK: 10
+Size EUR: 45
+Condition (out of 10): 9
+Fault: Slight wear here & there
+Price (PKR): 3500
+Original Price (PKR): 5600
+Image: assets/products/p57 (1).jpg, assets/products/p57 (2).jpg, assets/products/p57 (3).jpg, assets/products/p57 (4).jpg, assets/products/p57 (5).jpg, assets/products/p57 (6).jpg, assets/products/p57 (7).jpg, assets/products/p57 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Tiempo Legend 10 in White & Red.
+----------------------------------------
+Product ID: p58
+Name: NIKE Hypervenom Phelon II
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Neon Yellow & Black
+Size US: 10
+Size UK: 9
+Size EUR: 44
+Condition (out of 10): 9
+Fault: Slightly Repaired from the front
+Price (PKR): 4200
+Original Price (PKR): 7200
+Image: assets/products/p58 (1).jpg, assets/products/p58 (2).jpg, assets/products/p58 (3).jpg, assets/products/p58 (4).jpg, assets/products/p58 (5).jpg, assets/products/p58 (6).jpg, assets/products/p58 (7).jpg, assets/products/p58 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Hypervenom Phelon II in Neon Yellow & Black.
+----------------------------------------
+Product ID: p59
+Name: PUMA One 20.4
+Brand: PUMA
+Category: adult-studs
+Tag: 
+Color: Pink & Lime
+Size US: 8
+Size UK: 7
+Size EUR: 40.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p59 (1).jpg, assets/products/p59 (2).jpg, assets/products/p59 (3).jpg, assets/products/p59 (4).jpg, assets/products/p59 (5).jpg, assets/products/p59 (6).jpg, assets/products/p59 (7).jpg, assets/products/p59 (8).jpg
+Video: 
+Description: A genuine pre-owned PUMA One 20.4 in Pink & Lime.
+----------------------------------------
+Product ID: p60
+Name: ADIDAS Ace 15.1
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black & Yellow
+Size US: 8.5
+Size UK: 8
+Size EUR: 42
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6599
+Image: assets/products/p60 (1).jpg, assets/products/p60 (2).jpg, assets/products/p60 (3).jpg, assets/products/p60 (4).jpg, assets/products/p60 (5).jpg, assets/products/p60 (6).jpg, assets/products/p60 (7).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Ace 15.1 in Black & Yellow.
+----------------------------------------
+Product ID: p61
+Name: NIKE Phantom GT2
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Black & Volt
+Size US: 9.5
+Size UK: 8.5
+Size EUR: 43
+Condition (out of 10): 8
+Fault: Sides Repaired
+Price (PKR): 3800
+Original Price (PKR): 6500
+Image: assets/products/p61 (1).jpg, assets/products/p61 (2).jpg, assets/products/p61 (3).jpg, assets/products/p61 (4).jpg, assets/products/p61 (5).jpg, assets/products/p61 (6).jpg, assets/products/p61 (7).jpg, assets/products/p61 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Phantom GT2 in Black & Volt.
+----------------------------------------
+Product ID: p62
+Name: NIKE Mercurial Vapor XI
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Pink & White
+Size US: 10
+Size UK: 9
+Size EUR: 44
+Condition (out of 10): 7
+Fault: Some wear here & there
+Price (PKR): 3500
+Original Price (PKR): 6500
+Image: assets/products/p62 (1).jpg, assets/products/p62 (2).jpg, assets/products/p62 (3).jpg, assets/products/p62 (4).jpg, assets/products/p62 (5).jpg, assets/products/p62 (6).jpg, assets/products/p62 (7).jpg, assets/products/p62 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Vapor XI in Pink & White.
+----------------------------------------
+Product ID: p63
+Name: ADIDAS Predator 18.1
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Rose Gold
+Size US: 9
+Size UK: 8.5
+Size EUR: 42.75
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4300
+Original Price (PKR): 6900
+Image: assets/products/p63 (1).jpg, assets/products/p63 (2).jpg, assets/products/p63 (3).jpg, assets/products/p63 (4).jpg, assets/products/p63 (5).jpg, assets/products/p63 (6).jpg, assets/products/p63 (7).jpg, assets/products/p63 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Predator 18.1 in Rose Gold.
+----------------------------------------
+Product ID: p64
+Name: NIKE Phantom GT2
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Black
+Size US: 8
+Size UK: 7
+Size EUR: 41
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5000
+Original Price (PKR): 8000
+Image: assets/products/p64 (1).jpg, assets/products/p64 (2).jpg, assets/products/p64 (3).jpg, assets/products/p64 (4).jpg, assets/products/p64 (5).jpg, assets/products/p64 (6).jpg, assets/products/p64 (7).jpg, assets/products/p64 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Phantom GT2 in Black.
+----------------------------------------
+Product ID: p65
+Name: UMBRO Attacante
+Brand: UMBRO
+Category: adult-grippers
+Tag: 
+Color: Black & White
+Size US: 9
+Size UK: 8
+Size EUR: 42
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4900
+Original Price (PKR): 7000
+Image: assets/products/p65 (1).jpg, assets/products/p65 (2).jpg, assets/products/p65 (3).jpg, assets/products/p65 (4).jpg, assets/products/p65 (5).jpg, assets/products/p65 (6).jpg, assets/products/p65 (7).jpg, assets/products/p65 (8).jpg
+Video: 
+Description: A genuine pre-owned UMBRO Attacante in Black & White.
+----------------------------------------
+Product ID: p66
+Name: ADIDAS Goletto VIII
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Blue & White with Orange Studs
+Size US: 8
+Size UK: 7.5
+Size EUR: 41.33
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5000
+Original Price (PKR): 7000
+Image: assets/products/p66 (1).jpg, assets/products/p66 (2).jpg, assets/products/p66 (3).jpg, assets/products/p66 (4).jpg, assets/products/p66 (5).jpg, assets/products/p66 (6).jpg, assets/products/p66 (7).jpg, assets/products/p66 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Goletto VIII in Blue & White with Orange Studs.
+----------------------------------------
+Product ID: p67
+Name: ADIDAS AdiPure 11Pro
+Brand: ADIDAS
+Category: adult-grippers
+Tag: 
+Color: Black & Lime Green
+Size US: 9.5
+Size UK: 9
+Size EUR: 43.33
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4500
+Original Price (PKR): 6500
+Image: assets/products/p67 (1).jpg, assets/products/p67 (2).jpg, assets/products/p67 (3).jpg, assets/products/p67 (4).jpg, assets/products/p67 (5).jpg, assets/products/p67 (6).jpg, assets/products/p67 (7).jpg, assets/products/p67 (8).jpg
+Video: 
+Description: A genuine pre-owned ADIDAS AdiPure 11Pro in Black & Lime Green.
+----------------------------------------
+Product ID: p68
+Name: NIKE Phantom GT2
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Black & Volt
+Size US: 8
+Size UK: 7
+Size EUR: 41
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5500
+Original Price (PKR): 8000
+Image: assets/products/p68 (1).jpg, assets/products/p68 (2).jpg, assets/products/p68 (3).jpg, assets/products/p68 (4).jpg, assets/products/p68 (5).jpg, assets/products/p68 (6).jpg, assets/products/p68 (7).jpg, assets/products/p68 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Phantom GT2 in Black & Volt.
+----------------------------------------
+Product ID: p69
+Name: NIKE Mercurial Vortex II
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Black with Hyper Punch Accents
+Size US: 10
+Size UK: 9
+Size EUR: 44
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 6000
+Original Price (PKR): 8500
+Image: assets/products/p69 (1).jpg, assets/products/p69 (2).jpg, assets/products/p69 (3).jpg, assets/products/p69 (4).jpg, assets/products/p69 (5).jpg, assets/products/p69 (6).jpg, assets/products/p69 (7).jpg, assets/products/p69 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Vortex II in Black with Hyper Punch Accents.
+----------------------------------------
+Product ID: p70
+Name: NIKE Tiempo Legend 7 Elite
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Black & Orange
+Size US: 9.5
+Size UK: 8.5
+Size EUR: 43
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5500
+Original Price (PKR): 8000
+Image: assets/products/p70 (1).jpg, assets/products/p70 (2).jpg, assets/products/p70 (3).jpg, assets/products/p70 (4).jpg, assets/products/p70 (5).jpg, assets/products/p70 (6).jpg, assets/products/p70 (7).jpg, assets/products/p70 (8).jpg
+Video: 
+Description: A genuine pre-owned NIKE Tiempo Legend 7 Elite in Black & Orange.
+----------------------------------------
+Product ID: p71
+Name: NIKE Phantom GT2
+Brand: NIKE
+Category: kids-studs
+Tag: 
+Color: Blue, Green & Volt
+Size US: 6
+Size UK: 5.5
+Size EUR: 38.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3800
+Original Price (PKR): 6000
+Image: assets/products/p71.jpg
+Video: 
+Description: A genuine pre-owned NIKE Phantom GT2 in Blue, Green & Volt.
+----------------------------------------
+Product ID: p72
+Name: ADIDAS Predator Accuracy.4
+Brand: ADIDAS
+Category: kids-studs
+Tag: 
+Color: Black
+Size US: 5.5
+Size UK: 5
+Size EUR: 38
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 3900
+Original Price (PKR): 6000
+Image: assets/products/p72.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Predator Accuracy.4 in Black.
+----------------------------------------
+Product ID: p73
+Name: NIKE Mercurial Vapor XI
+Brand: NIKE
+Category: kids-studs
+Tag: 
+Color: Fireberry / Electric Green-Red Plum
+Size US: 6
+Size UK: 5.5
+Size EUR: 38.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6000
+Image: assets/products/p73.jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Vapor XI in Fireberry / Electric Green-Red Plum.
+----------------------------------------
+Product ID: p74
+Name: ADIDAS X 17.1
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black
+Size US: 9.5
+Size UK: 9
+Size EUR: 43.33
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5300
+Original Price (PKR): 7000
+Image: assets/products/p74.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS X 17.1 in Black.
+----------------------------------------
+Product ID: p75
+Name: NIKE Air Zoom Mercurial Vapor 16
+Brand: NIKE
+Category: kids-studs
+Tag: 
+Color: Glacier Blue & Blue Orbit
+Size US: 6
+Size UK: 5.5
+Size EUR: 38.5
+Condition (out of 10): 9
+Fault: Slight Cosmetic Damage
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p75.jpg
+Video: 
+Description: A genuine pre-owned NIKE Air Zoom Mercurial Vapor 16 in Glacier Blue & Blue Orbit.
+----------------------------------------
+Product ID: p76
+Name: NIKE Tiempo Rio
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Volt Yellow & Black
+Size US: 11
+Size UK: 10
+Size EUR: 45
+Condition (out of 10): 9
+Fault: Slight Cosmetic Damage
+Price (PKR): 3800
+Original Price (PKR): 6500
+Image: assets/products/p76.jpg
+Video: 
+Description: A genuine pre-owned NIKE Tiempo Rio in Volt Yellow & Black.
+----------------------------------------
+Product ID: p77
+Name: NIKE Phantom VSN 2
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: White & Black
+Size US: 7.5
+Size UK: 6.5
+Size EUR: 40.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5400
+Original Price (PKR): 7000
+Image: assets/products/p77.jpg
+Video: 
+Description: A genuine pre-owned NIKE Phantom VSN 2 in White & Black.
+----------------------------------------
+Product ID: p78
+Name: ADIDAS F50
+Brand: ADIDAS
+Category: adult-grippers
+Tag: 
+Color: Black, Iron Metallic & Gold
+Size US: 6.5
+Size UK: 6
+Size EUR: 39.33
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5500
+Original Price (PKR): 7500
+Image: assets/products/p78.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS F50 in Black, Iron Metallic & Gold.
+----------------------------------------
+Product ID: p79
+Name: ADIDAS F50
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black, Iron Metallic & Lucid Red
+Size US: 8.5
+Size UK: 8
+Size EUR: 42
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 8000
+Original Price (PKR): 12000
+Image: assets/products/p79.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS F50 in Black, Iron Metallic & Lucid Red.
+----------------------------------------
+Product ID: p80
+Name: NIKE Mercurial Vortex II
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Pink to Yellow Gradient
+Size US: 10
+Size UK: 9
+Size EUR: 44
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p80.jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Vortex II in Pink to Yellow Gradient.
+----------------------------------------
+Product ID: p81
+Name: NIKE Elastico Finale
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Grey & Neon Green
+Size US: 11
+Size UK: 10
+Size EUR: 45
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p81.jpg
+Video: 
+Description: A genuine pre-owned NIKE Elastico Finale in Grey & Neon Green.
+----------------------------------------
+Product ID: p82
+Name: ASICS Lethal Charge
+Brand: ASICS
+Category: adult-studs
+Tag: 
+Color: Black & Blue
+Size US: 12
+Size UK: 11
+Size EUR: 46.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4200
+Original Price (PKR): 6500
+Image: assets/products/p82.jpg
+Video: 
+Description: A genuine pre-owned ASICS Lethal Charge in Black & Blue.
+----------------------------------------
+Product ID: p83
+Name: NIKE Hypervenom Phelon II
+Brand: NIKE
+Category: adult-grippers
+Tag: 
+Color: Purple & Bright Yellow Graphics
+Size US: 11
+Size UK: 10
+Size EUR: 45
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5400
+Original Price (PKR): 7200
+Image: assets/products/p83.jpg
+Video: 
+Description: A genuine pre-owned NIKE Hypervenom Phelon II in Purple & Bright Yellow Graphics.
+----------------------------------------
+Product ID: p84
+Name: NIKE Mercurial Vapor 12
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Black on Black
+Size US: 10.5
+Size UK: 9.5
+Size EUR: 44.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4800
+Original Price (PKR): 6500
+Image: assets/products/p84.jpg
+Video: 
+Description: A genuine pre-owned NIKE Mercurial Vapor 12 in Black on Black.
+----------------------------------------
+Product ID: p85
+Name: PUMA EvoKnit
+Brand: PUMA
+Category: adult-studs
+Tag: 
+Color: Black
+Size US: 11
+Size UK: 10
+Size EUR: 44.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5000
+Original Price (PKR): 7000
+Image: assets/products/p85.jpg
+Video: 
+Description: A genuine pre-owned PUMA EvoKnit in Black.
+----------------------------------------
+Product ID: p86
+Name: NIKE Phantom VSN Elite with Ghost Lace
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Black & Neon Green
+Size US: 11.5
+Size UK: 10.5
+Size EUR: 45.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5000
+Original Price (PKR): 7000
+Image: assets/products/p86.jpg
+Video: 
+Description: A genuine pre-owned NIKE Phantom VSN Elite with Ghost Lace in Black & Neon Green.
+----------------------------------------
+Product ID: p87
+Name: KOOGA Power SG
+Brand: KOOGA
+Category: adult-studs
+Tag: 
+Color: Black
+Size US: 9
+Size UK: 8
+Size EUR: 42
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p87.jpg
+Video: 
+Description: A genuine pre-owned KOOGA Power SG in Black.
+----------------------------------------
+Product ID: p88
+Name: SONDICO Strike II
+Brand: SONDICO
+Category: adult-grippers
+Tag: 
+Color: Black & White
+Size US: 10.5
+Size UK: 9.5
+Size EUR: 43.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4300
+Original Price (PKR): 7000
+Image: assets/products/p88.jpg
+Video: 
+Description: A genuine pre-owned SONDICO Strike II in Black & White.
+----------------------------------------
+Product ID: p89
+Name: ADIDAS Predator Edge.3
+Brand: ADIDAS
+Category: adult-grippers
+Tag: 
+Color: Black With blue & Red & White Stripes
+Size US: 10
+Size UK: 9.5
+Size EUR: 44
+Condition (out of 10): 9
+Fault: Slighlt worn from the front
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p89.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Predator Edge.3 in Black With blue & Red & White Stripes.
+----------------------------------------
+Product ID: p90
+Name: ADIDAS Goletto VII
+Brand: ADIDAS
+Category: kids-grippers
+Tag: 
+Color: Black
+Size US: 5.5
+Size UK: 5
+Size EUR: 38
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4500
+Original Price (PKR): 6500
+Image: assets/products/p90.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Goletto VII in Black.
+----------------------------------------
+Product ID: p91
+Name: ADIDAS X Ghosted.2
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Green Energy
+Size US: 12
+Size UK: 11.5
+Size EUR: 46.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5400
+Original Price (PKR): 6900
+Image: assets/products/p91.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS X Ghosted.2 in Green Energy.
+----------------------------------------
+Product ID: p92
+Name: NEW BALANCE Tekela V3
+Brand: NEW BALANCE
+Category: adult-studs
+Tag: 
+Color: Pink
+Size US: 11.5
+Size UK: 11
+Size EUR: 45.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4800
+Original Price (PKR): 7000
+Image: assets/products/p92.jpg
+Video: 
+Description: A genuine pre-owned NEW BALANCE Tekela V3 in Pink.
+----------------------------------------
+Product ID: p93
+Name: ADIDAS 11Pro
+Brand: ADIDAS
+Category: adult-grippers
+Tag: 
+Color: White with Red Stripes
+Size US: 11
+Size UK: 10
+Size EUR: 45
+Condition (out of 10): 9
+Fault: Signs of wear
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p93.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS 11Pro in White with Red Stripes.
+----------------------------------------
+Product ID: p94
+Name: ADIDAS X Deadly Focus
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: White with Black Graphics
+Size US: 12.5
+Size UK: 12
+Size EUR: 47.33
+Condition (out of 10): 8
+Fault: Metal / Plastic Studs not Available but can be bought online
+Price (PKR): 3500
+Original Price (PKR): 6500
+Image: assets/products/p94.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS X Deadly Focus in White with Black Graphics.
+----------------------------------------
+Product ID: p95
+Name: NIKE Hypervenom Phantom 3 Elite
+Brand: NIKE
+Category: adult-studs
+Tag: 
+Color: Dark Grey & Orange
+Size US: 9
+Size UK: 8
+Size EUR: 42.5
+Condition (out of 10): 8
+Fault: Slightly Repaired Sides
+Price (PKR): 3500
+Original Price (PKR): 6500
+Image: assets/products/p95.jpg
+Video: 
+Description: A genuine pre-owned NIKE Hypervenom Phantom 3 Elite in Dark Grey & Orange.
+----------------------------------------
+Product ID: p96
+Name: ADIDAS X Ghosted.3
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black
+Size US: 7.5
+Size UK: 7
+Size EUR: 40.66
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4000
+Original Price (PKR): 6500
+Image: assets/products/p96.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS X Ghosted.3 in Black.
+----------------------------------------
+Product ID: p97
+Name: ADIDAS Goletto
+Brand: ADIDAS
+Category: kids-grippers
+Tag: 
+Color: Black & White
+Size US: 5.5
+Size UK: 5
+Size EUR: 38
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4200
+Original Price (PKR): 5800
+Image: assets/products/p97.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Goletto in Black & White.
+----------------------------------------
+Product ID: p98
+Name: NIKE Air Zoom Mercurial Vapor 16 Elite
+Brand: NIKE
+Category: adult-studs
+Tag: Like New
+Color: Pink
+Size US: 10
+Size UK: 9
+Size EUR: 44
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 15000
+Original Price (PKR): 18500
+Image: assets/products/p98.jpg
+Video: 
+Description: A genuine pre-owned NIKE Air Zoom Mercurial Vapor 16 Elite in Pink.
+----------------------------------------
+Product ID: p99
+Name: ADIDAS Kakari SG
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: Black
+Size US: 8.5
+Size UK: 8
+Size EUR: 42
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4200
+Original Price (PKR): 6500
+Image: assets/products/p99.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Kakari SG in Black.
+----------------------------------------
+Product ID: p100
+Name: ADIDAS Speedportal.3
+Brand: ADIDAS
+Category: kids-grippers
+Tag: 
+Color: Solar Green & Black
+Size US: 5.5
+Size UK: 5
+Size EUR: 38
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4300
+Original Price (PKR): 6500
+Image: assets/products/p100.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Speedportal.3 in Solar Green & Black.
+----------------------------------------
+Product ID: p101
+Name: ADIDAS Nemeziz 19.4
+Brand: ADIDAS
+Category: adult-grippers
+Tag: 
+Color: Red & Silver
+Size US: 8
+Size UK: 7.5
+Size EUR: 41.33
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 6000
+Original Price (PKR): 8000
+Image: assets/products/p101.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Nemeziz 19.4 in Red & Silver.
+----------------------------------------
+Product ID: p102
+Name: ADIDAS Goletto VIII
+Brand: ADIDAS
+Category: adult-studs
+Tag: 
+Color: White
+Size US: 8.5
+Size UK: 8
+Size EUR: 42
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 4900
+Original Price (PKR): 8000
+Image: assets/products/p102.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Goletto VIII in White.
+----------------------------------------
+Product ID: p103
+Name: ADIDAS Nemeziz Tango 17.4
+Brand: ADIDAS
+Category: adult-grippers
+Tag: 
+Color: Red & Black
+Size US: 9
+Size UK: 8.5
+Size EUR: 42.66
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 6000
+Original Price (PKR): 8000
+Image: assets/products/p103.jpg
+Video: 
+Description: A genuine pre-owned ADIDAS Nemeziz Tango 17.4 in Red & Black.
+----------------------------------------

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sultan Football Cleats</title>
+<meta name="description" content="Product details — Sultan Football Cleats." />
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Sultan Football Cleats crest" />
+      <span class="brand-text"><strong>Sultan</strong><span>Football Cleats</span></span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <form class="search-box" action="shop.html" method="GET" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" name="q" placeholder="Search shoes or size…" aria-label="Search shoes or size" autocomplete="off" />
+      </form>
+      <button class="search-toggle" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <div class="currency-toggle" data-currency-toggle>
+        <button data-currency="USD">USD</button>
+        <button data-currency="PKR">PKR</button>
+      </div>
+      <a href="https://www.instagram.com/sultanfootballcleats/" target="_blank" rel="noopener" class="social-icon-link" aria-label="Sultan Football Cleats on Instagram" title="@sultanfootballcleats">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="cart.html" class="cart-link" aria-label="View cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 002 1.6h9.7a2 2 0 002-1.6L23 6H6"/></svg>
+        <span data-cart-count class="cart-count">0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu"></button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap breadcrumb">
+  <a href="index.html">Home</a><span>/</span><a href="shop.html">Shop</a><span>/</span><span id="crumbName">Product</span>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="pdp" id="pdpRoot">
+      <!-- rendered by js/product.js -->
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;" id="relatedSection">
+  <div class="wrap">
+    <div class="divider-blade"></div>
+    <h3 class="related-title">You Might Also Like</h3>
+    <div class="product-grid" id="relatedGrid"></div>
+  </div>
+</section>
+
+<footer class="site-footer" id="footer"></footer>
+
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
