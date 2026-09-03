@@ -298,8 +298,8 @@ Color: Red & Green
 Size US: 8
 Size UK: 7
 Size EUR: 41
-Condition (out of 10): 10
-Fault: None
+Condition (out of 10): 9
+Fault: SLightly repaired
 Price (PKR): 4000
 Original Price (PKR): 7000
 Image: assets/products/p15 (1).jpg, assets/products/p15 (2).jpg, assets/products/p15 (3).jpg, assets/products/p15 (4).jpg, assets/products/p15 (5).jpg, assets/products/p15 (6).jpg, assets/products/p15 (7).jpg, assets/products/p15 (8).jpg
