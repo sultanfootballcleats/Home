@@ -70,22 +70,26 @@
         <button class="filter-pill" data-cat="kids">Kids</button>
         <button class="filter-pill" data-cat="accessories">Accessories</button>
       </div>
-      <div style="display:flex; align-items:center; gap:16px;">
-        <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
-          Filters
-        </button>
-        <button class="share-page-btn" id="shareShopBtn" type="button" aria-label="Share this search">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-          Share
-        </button>
-        <span class="result-count" id="resultCount"></span>
-        <select class="sort-select" id="sortSelect">
-          <option value="featured">Featured</option>
-          <option value="price-asc">Price: Low to High</option>
-          <option value="price-desc">Price: High to Low</option>
-          <option value="name">Name: A–Z</option>
-        </select>
+      <div class="filters-actions">
+        <div class="filters-actions-left">
+          <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+            Filters
+          </button>
+          <button class="share-page-btn" id="shareShopBtn" type="button" aria-label="Share this search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            Share
+          </button>
+        </div>
+        <div class="filters-actions-right">
+          <span class="result-count" id="resultCount"></span>
+          <select class="sort-select" id="sortSelect">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name">Name: A–Z</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -104,7 +108,7 @@
           <option value="all">Any brand</option>
         </select>
       </div>
-      <div class="filter-field">
+      <div class="filter-field filter-field-size">
         <label>Size (UK) Range</label>
         <div class="filter-budget-row">
           <select id="filterSizeMin">
