@@ -66,10 +66,9 @@
     <div class="filters-bar">
       <div class="filter-pills" id="filterPills">
         <button class="filter-pill" data-cat="all">All</button>
-        <button class="filter-pill" data-cat="adult-studs">Adult Studs</button>
-        <button class="filter-pill" data-cat="kids-studs">Kids Studs</button>
-        <button class="filter-pill" data-cat="adult-grippers">Adult Grippers</button>
-        <button class="filter-pill" data-cat="kids-grippers">Kids Grippers</button>
+        <button class="filter-pill" data-cat="adult">Adults</button>
+        <button class="filter-pill" data-cat="kids">Kids</button>
+        <button class="filter-pill" data-cat="accessories">Accessories</button>
       </div>
       <div style="display:flex; align-items:center; gap:16px;">
         <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false">
@@ -102,10 +101,16 @@
         </select>
       </div>
       <div class="filter-field">
-        <label for="filterSize">Size (UK)</label>
-        <select id="filterSize">
-          <option value="all">Any size</option>
-        </select>
+        <label>Size (UK) Range</label>
+        <div class="filter-budget-row">
+          <select id="filterSizeMin">
+            <option value="">Min</option>
+          </select>
+          <span>–</span>
+          <select id="filterSizeMax">
+            <option value="">Max</option>
+          </select>
+        </div>
       </div>
       <div class="filter-field">
         <label for="filterCondition">Condition</label>
