@@ -22,6 +22,13 @@
 #                       kids-studs
 #                       adult-grippers
 #                       kids-grippers
+#                       accessories    (shin guards, socks, bags, etc — anything
+#                                       that isn't studs or grippers footwear)
+#                     Note: the shop's Category filter only shows Adults /
+#                     Kids / Accessories, and the separate Type filter shows
+#                     Studs / Grippers — so "adult-studs" shows up under both
+#                     "Adults" and "Studs" automatically, you don't need to
+#                     pick between them.
 #   Tag            — small badge on the card, e.g. Like New, Best Deal.
 #                     Leave blank for no badge.
 #   Color          — e.g. Black & White
@@ -298,8 +305,8 @@ Color: Red & Green
 Size US: 8
 Size UK: 7
 Size EUR: 41
-Condition (out of 10): 9
-Fault: SLightly repaired
+Condition (out of 10): 10
+Fault: None
 Price (PKR): 4000
 Original Price (PKR): 7000
 Image: assets/products/p15 (1).jpg, assets/products/p15 (2).jpg, assets/products/p15 (3).jpg, assets/products/p15 (4).jpg, assets/products/p15 (5).jpg, assets/products/p15 (6).jpg, assets/products/p15 (7).jpg, assets/products/p15 (8).jpg
