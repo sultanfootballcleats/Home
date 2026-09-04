@@ -15,7 +15,8 @@
     let sortBy = "featured";
     let activeType = "all";
     let activeBrand = "all";
-    let activeSize = "all";
+    let sizeMin = null;
+    let sizeMax = null;
     let minCondition = 0;
     let budgetMinPKR = null;
     let budgetMaxPKR = null;
@@ -25,7 +26,8 @@
     const filterToggle = document.getElementById("filterToggle");
     const typeSelect = document.getElementById("filterType");
     const brandSelect = document.getElementById("filterBrand");
-    const sizeSelect = document.getElementById("filterSize");
+    const sizeMinSelect = document.getElementById("filterSizeMin");
+    const sizeMaxSelect = document.getElementById("filterSizeMax");
     const conditionSelect = document.getElementById("filterCondition");
     const budgetMinInput = document.getElementById("filterBudgetMin");
     const budgetMaxInput = document.getElementById("filterBudgetMax");
@@ -37,12 +39,17 @@
       opt.textContent = brand;
       brandSelect.appendChild(opt);
     });
+    // Same "UK X (EUR Y)" labeling on both ends of the range, built from
+    // whatever sizes actually exist in data/products.txt.
     window.uniqueSizesUK().forEach((size) => {
       const match = PRODUCTS.find((p) => String(p.sizeUK) === String(size));
-      const opt = document.createElement("option");
-      opt.value = size;
-      opt.textContent = match && match.sizeEUR ? `UK ${size} (EUR ${match.sizeEUR})` : `UK ${size}`;
-      sizeSelect.appendChild(opt);
+      const label = match && match.sizeEUR ? `UK ${size} (EUR ${match.sizeEUR})` : `UK ${size}`;
+      [sizeMinSelect, sizeMaxSelect].forEach((select) => {
+        const opt = document.createElement("option");
+        opt.value = size;
+        opt.textContent = label;
+        select.appendChild(opt);
+      });
     });
 
     if (filterToggle) {
@@ -53,7 +60,24 @@
     }
     typeSelect.addEventListener("change", () => { activeType = typeSelect.value; render(); });
     brandSelect.addEventListener("change", () => { activeBrand = brandSelect.value; render(); });
-    sizeSelect.addEventListener("change", () => { activeSize = sizeSelect.value; render(); });
+    sizeMinSelect.addEventListener("change", () => {
+      sizeMin = sizeMinSelect.value ? parseFloat(sizeMinSelect.value) : null;
+      // Keep the range sane: if Min is pushed past the current Max, bring Max up to match
+      // rather than silently returning zero results.
+      if (sizeMin !== null && sizeMax !== null && sizeMin > sizeMax) {
+        sizeMax = sizeMin;
+        sizeMaxSelect.value = sizeMinSelect.value;
+      }
+      render();
+    });
+    sizeMaxSelect.addEventListener("change", () => {
+      sizeMax = sizeMaxSelect.value ? parseFloat(sizeMaxSelect.value) : null;
+      if (sizeMin !== null && sizeMax !== null && sizeMax < sizeMin) {
+        sizeMin = sizeMax;
+        sizeMinSelect.value = sizeMaxSelect.value;
+      }
+      render();
+    });
     conditionSelect.addEventListener("change", () => { minCondition = parseFloat(conditionSelect.value); render(); });
     budgetMinInput.addEventListener("input", () => {
       budgetMinPKR = budgetMinInput.value ? parseFloat(budgetMinInput.value) : null;
@@ -64,9 +88,10 @@
       render();
     });
     filterResetBtn.addEventListener("click", () => {
-      activeType = "all"; activeBrand = "all"; activeSize = "all"; minCondition = 0;
+      activeType = "all"; activeBrand = "all"; sizeMin = null; sizeMax = null; minCondition = 0;
       budgetMinPKR = null; budgetMaxPKR = null;
-      typeSelect.value = "all"; brandSelect.value = "all"; sizeSelect.value = "all"; conditionSelect.value = "0";
+      typeSelect.value = "all"; brandSelect.value = "all";
+      sizeMinSelect.value = ""; sizeMaxSelect.value = ""; conditionSelect.value = "0";
       budgetMinInput.value = ""; budgetMaxInput.value = "";
       render();
     });
@@ -144,7 +169,7 @@
     function render() {
       let list = PRODUCTS.slice();
       if (activeCategory !== "all") {
-        list = list.filter((p) => p.category === activeCategory);
+        list = list.filter((p) => window.productAgeGroup(p.category) === activeCategory);
       }
       if (activeType !== "all") {
         list = list.filter((p) => window.productType(p.category) === activeType);
@@ -155,8 +180,14 @@
       if (activeBrand !== "all") {
         list = list.filter((p) => p.brand === activeBrand);
       }
-      if (activeSize !== "all") {
-        list = list.filter((p) => String(p.sizeUK) === activeSize);
+      if (sizeMin !== null || sizeMax !== null) {
+        list = list.filter((p) => {
+          const s = parseFloat(p.sizeUK);
+          if (isNaN(s)) return false;
+          if (sizeMin !== null && s < sizeMin) return false;
+          if (sizeMax !== null && s > sizeMax) return false;
+          return true;
+        });
       }
       if (minCondition > 0) {
         list = list.filter((p) => window.conditionToStars(p.condition) >= minCondition - 0.001);

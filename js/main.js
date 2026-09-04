@@ -33,6 +33,7 @@ const CATEGORY_LABELS = {
   "kids-studs": "Kids Studs",
   "adult-grippers": "Adult Grippers",
   "kids-grippers": "Kids Grippers",
+  "accessories": "Accessories",
 };
 // Auto-assigned per category so nobody has to pick a hex colour per product
 // in the text file — just a subtle accent behind each product photo.
@@ -41,6 +42,7 @@ const CATEGORY_ACCENT = {
   "kids-studs": "#4A6FA5",
   "adult-grippers": "#5C7A99",
   "kids-grippers": "#7C93B0",
+  "accessories": "#8A6D3B",
 };
 // Studs vs grippers cuts across the adult/kids split — used by the shop
 // page's "Type" filter (adult-studs & kids-studs = studs, etc).
@@ -51,6 +53,17 @@ function productType(category) {
   return "";
 }
 window.productType = productType;
+// Adults vs kids vs accessories — used by the shop page's category pills,
+// kept separate from productType() above so Studs/Grippers only ever has
+// to be picked in one place (the Type filter).
+function productAgeGroup(category) {
+  if (!category) return "";
+  if (category === "accessories") return "accessories";
+  if (category.indexOf("adult") !== -1) return "adult";
+  if (category.indexOf("kids") !== -1) return "kids";
+  return "";
+}
+window.productAgeGroup = productAgeGroup;
 
 function getProduct(id) {
   return PRODUCTS.find((p) => p.id === id);
@@ -463,11 +476,6 @@ function openImageZoom(images, startIndex, productName) {
   document.body.appendChild(overlay);
   document.body.style.overflow = "hidden";
 
-  // Push a history entry so the phone/browser back button closes the viewer
-  // instead of navigating away from the product page entirely.
-  history.pushState({ zoomOverlay: true }, "");
-  window.addEventListener("popstate", onPopState);
-
   const img = overlay.querySelector(".zoom-image");
   const stage = overlay.querySelector(".zoom-stage");
   const fallback = overlay.querySelector(".zoom-fallback");
@@ -494,22 +502,12 @@ function openImageZoom(images, startIndex, productName) {
     img.src = images[index].src;
     img.alt = `${productName} — ${images[index].label}`;
   }
-  function close(fromPopstate) {
-    if (overlay.dataset.closed) return; // avoid double-closing
-    overlay.dataset.closed = "true";
+  function close() {
     document.body.style.overflow = "";
     document.removeEventListener("keydown", onKey);
     window.removeEventListener("mousemove", onMouseMove);
     window.removeEventListener("mouseup", onMouseUp);
-    window.removeEventListener("popstate", onPopState);
     overlay.remove();
-    // If we're closing via the X, backdrop, or Escape (not because the user
-    // already pressed back), consume the history entry we pushed above so
-    // back/forward navigation stays in sync with what's on screen.
-    if (!fromPopstate) history.back();
-  }
-  function onPopState() {
-    close(true);
   }
   function onKey(e) {
     if (e.key === "Escape") close();
