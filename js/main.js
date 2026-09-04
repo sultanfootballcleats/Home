@@ -349,9 +349,24 @@ function whatsAppOrderLink(customer) {
   const msg = encodeURIComponent(buildWhatsAppOrderMessage(customer));
   return `https://wa.me/${STORE.whatsapp}?text=${msg}`;
 }
-function whatsAppEnquiryLink(productName) {
+// Accepts the full product object (not just the name) so the message to
+// us always states exactly which unique pair — size + colorway — the
+// customer means. Falls back gracefully if a product is passed as a bare
+// string (old call sites, or a product with missing fields).
+function whatsAppEnquiryLink(product) {
+  let productName = product;
+  let details = "";
+  if (product && typeof product === "object") {
+    productName = product.name;
+    const sizeBits = [];
+    if (product.sizeUK) sizeBits.push(`UK ${product.sizeUK}`);
+    if (product.sizeEUR) sizeBits.push(`EUR ${product.sizeEUR}`);
+    if (product.sizeUS) sizeBits.push(`US ${product.sizeUS}`);
+    if (sizeBits.length) details += ` — Size: ${sizeBits.join(" / ")}`;
+    if (product.color) details += ` — Colorway: ${product.color}`;
+  }
   const msg = encodeURIComponent(
-    `Hi Sultan Football Cleats, I'd like to ask about the ${productName}.`
+    `Hi Sultan Football Cleats, I'd like to ask about the ${productName}.${details}`
   );
   return `https://wa.me/${STORE.whatsapp}?text=${msg}`;
 }
@@ -375,6 +390,7 @@ function showToast(message) {
 /* ---------------------------------- Icons (inline SVG helpers) ---------------------------------- */
 const ICONS = {
   crown: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 8l4 3 5-6 5 6 4-3-2 10H5L3 8zm2.2 12h13.6v2H5.2v-2z"/></svg>`,
+  share: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>`,
   boot: `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M14 40V16c0-1.7 1.3-3 3-3h10c1.1 0 2 .9 2 2v9.5c0 1 .5 1.9 1.4 2.4l16.4 9.4c2.5 1.4 4.2 4 4.2 6.9V44c0 2.2-1.8 4-4 4H18a4 4 0 01-4-4v-4z" stroke="#0D1B30" stroke-width="1.6" fill="rgba(13,27,48,0.06)"/>
     <path d="M14 40h37" stroke="#0D1B30" stroke-width="1.6"/>
@@ -445,6 +461,47 @@ function wireProductCardLinks(container) {
   });
 }
 window.wireProductCardLinks = wireProductCardLinks;
+
+/* ---------------------------------- Share ----------------------------------
+   Used for both the per-product share buttons (product cards + PDP) and the
+   "Share this search" button on the shop page. Tries the native share sheet
+   first (best on phones — lets them share straight to WhatsApp/Instagram/etc.)
+   and falls back to copying the link to the clipboard. */
+function shareLink({ url, title, text }) {
+  const shareData = { url, title, text };
+  if (navigator.share) {
+    navigator.share(shareData).catch(() => {});
+    return;
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard
+      .writeText(url)
+      .then(() => showToast("Link copied to clipboard"))
+      .catch(() => window.prompt("Copy this link:", url));
+  } else {
+    window.prompt("Copy this link:", url);
+  }
+}
+window.shareLink = shareLink;
+
+// Delegated listener so every share button works, including ones inside
+// product cards rendered later (shop grid, related products, etc) — no
+// per-container wiring needed. Buttons are skipped by wireProductCardLinks'
+// card-click-to-navigate logic already (it ignores clicks on a/button).
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-share-id]");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const product = getProduct(btn.dataset.shareId);
+  if (!product) return;
+  const url = new URL(`product.html?id=${product.id}`, location.href).href;
+  shareLink({
+    url,
+    title: product.name,
+    text: `Check out this ${product.name} on Sultan Football Cleats`,
+  });
+});
 
 /* ---------------------------------- Product photo zoom lightbox ----------------------------------
    Opens a full-screen viewer for a product's photos. Supports pinch-to-zoom and single-finger

@@ -9,17 +9,25 @@
     const resultCount = document.getElementById("resultCount");
     const sortSelect = document.getElementById("sortSelect");
 
+    // Every filter (plus sort) is read from the URL on load and kept in sync
+    // with it as the customer changes things — see syncURL() below — so a
+    // shared/bookmarked link always reopens the shop with the same results.
     const params = new URLSearchParams(location.search);
     let activeCategory = params.get("cat") || "all";
     let searchTerm = (params.get("q") || "").trim();
-    let sortBy = "featured";
-    let activeType = "all";
-    let activeBrand = "all";
-    let sizeMin = null;
-    let sizeMax = null;
-    let minCondition = 0;
-    let budgetMinPKR = null;
-    let budgetMaxPKR = null;
+    let sortBy = params.get("sort") || "featured";
+    let activeType = params.get("type") || "all";
+    let activeBrand = params.get("brand") || "all";
+    let sizeMin = params.has("sizeMin") ? parseFloat(params.get("sizeMin")) : null;
+    let sizeMax = params.has("sizeMax") ? parseFloat(params.get("sizeMax")) : null;
+    if (sizeMin !== null && isNaN(sizeMin)) sizeMin = null;
+    if (sizeMax !== null && isNaN(sizeMax)) sizeMax = null;
+    let minCondition = params.has("condition") ? parseFloat(params.get("condition")) : 0;
+    if (isNaN(minCondition)) minCondition = 0;
+    let budgetMinPKR = params.has("budgetMin") ? parseFloat(params.get("budgetMin")) : null;
+    let budgetMaxPKR = params.has("budgetMax") ? parseFloat(params.get("budgetMax")) : null;
+    if (budgetMinPKR !== null && isNaN(budgetMinPKR)) budgetMinPKR = null;
+    if (budgetMaxPKR !== null && isNaN(budgetMaxPKR)) budgetMaxPKR = null;
 
     /* ------------------------------ Filter panel ------------------------------ */
     const filterPanel = document.getElementById("filterPanel");
@@ -52,14 +60,30 @@
       });
     });
 
+    // Reflect whatever came in on the URL back onto the filter controls
+    // themselves, now that their <option>s have been built above.
+    typeSelect.value = activeType;
+    brandSelect.value = window.uniqueBrands().includes(activeBrand) ? activeBrand : "all";
+    if (activeBrand !== "all" && brandSelect.value === "all") activeBrand = "all";
+    sizeMinSelect.value = sizeMin !== null ? String(sizeMin) : "";
+    sizeMaxSelect.value = sizeMax !== null ? String(sizeMax) : "";
+    conditionSelect.value = String(minCondition || 0);
+    budgetMinInput.value = budgetMinPKR !== null ? String(budgetMinPKR) : "";
+    budgetMaxInput.value = budgetMaxPKR !== null ? String(budgetMaxPKR) : "";
+    sortSelect.value = sortBy;
+    if (filterPanel && (activeType !== "all" || activeBrand !== "all" || sizeMin !== null || sizeMax !== null || minCondition > 0 || budgetMinPKR !== null || budgetMaxPKR !== null)) {
+      filterPanel.classList.add("open");
+      if (filterToggle) filterToggle.setAttribute("aria-expanded", "true");
+    }
+
     if (filterToggle) {
       filterToggle.addEventListener("click", () => {
         const isOpen = filterPanel.classList.toggle("open");
         filterToggle.setAttribute("aria-expanded", String(isOpen));
       });
     }
-    typeSelect.addEventListener("change", () => { activeType = typeSelect.value; render(); });
-    brandSelect.addEventListener("change", () => { activeBrand = brandSelect.value; render(); });
+    typeSelect.addEventListener("change", () => { activeType = typeSelect.value; syncURL(); render(); });
+    brandSelect.addEventListener("change", () => { activeBrand = brandSelect.value; syncURL(); render(); });
     sizeMinSelect.addEventListener("change", () => {
       sizeMin = sizeMinSelect.value ? parseFloat(sizeMinSelect.value) : null;
       // Keep the range sane: if Min is pushed past the current Max, bring Max up to match
@@ -68,6 +92,7 @@
         sizeMax = sizeMin;
         sizeMaxSelect.value = sizeMinSelect.value;
       }
+      syncURL();
       render();
     });
     sizeMaxSelect.addEventListener("change", () => {
@@ -76,15 +101,18 @@
         sizeMin = sizeMax;
         sizeMinSelect.value = sizeMaxSelect.value;
       }
+      syncURL();
       render();
     });
-    conditionSelect.addEventListener("change", () => { minCondition = parseFloat(conditionSelect.value); render(); });
+    conditionSelect.addEventListener("change", () => { minCondition = parseFloat(conditionSelect.value); syncURL(); render(); });
     budgetMinInput.addEventListener("input", () => {
       budgetMinPKR = budgetMinInput.value ? parseFloat(budgetMinInput.value) : null;
+      syncURL();
       render();
     });
     budgetMaxInput.addEventListener("input", () => {
       budgetMaxPKR = budgetMaxInput.value ? parseFloat(budgetMaxInput.value) : null;
+      syncURL();
       render();
     });
     filterResetBtn.addEventListener("click", () => {
@@ -93,6 +121,7 @@
       typeSelect.value = "all"; brandSelect.value = "all";
       sizeMinSelect.value = ""; sizeMaxSelect.value = ""; conditionSelect.value = "0";
       budgetMinInput.value = ""; budgetMaxInput.value = "";
+      syncURL();
       render();
     });
 
@@ -116,6 +145,7 @@
               ${window.productThumbHTML(p)}
             </div>
           </a>
+          <button class="share-btn" type="button" data-share-id="${p.id}" aria-label="Share ${p.name}" title="Share">${window.ICONS.share}</button>
           <div class="product-body">
             <span class="product-cat">${p.categoryLabel}</span>
             <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
@@ -221,12 +251,25 @@
       });
     }
 
+    // Every active filter (and the sort order) is written into the URL so
+    // that copying/sharing the page link reopens the shop with the exact
+    // same results the customer was looking at.
     function syncURL() {
       const url = new URL(location.href);
-      if (activeCategory === "all") url.searchParams.delete("cat");
-      else url.searchParams.set("cat", activeCategory);
-      if (searchTerm) url.searchParams.set("q", searchTerm);
-      else url.searchParams.delete("q");
+      const set = (key, value, isDefault) => {
+        if (isDefault) url.searchParams.delete(key);
+        else url.searchParams.set(key, value);
+      };
+      set("cat", activeCategory, activeCategory === "all");
+      set("q", searchTerm, !searchTerm);
+      set("sort", sortBy, sortBy === "featured");
+      set("type", activeType, activeType === "all");
+      set("brand", activeBrand, activeBrand === "all");
+      set("sizeMin", sizeMin, sizeMin === null);
+      set("sizeMax", sizeMax, sizeMax === null);
+      set("condition", minCondition, !minCondition);
+      set("budgetMin", budgetMinPKR, budgetMinPKR === null);
+      set("budgetMax", budgetMaxPKR, budgetMaxPKR === null);
       history.replaceState({}, "", url);
     }
 
@@ -240,6 +283,7 @@
 
     sortSelect.addEventListener("change", (e) => {
       sortBy = e.target.value;
+      syncURL();
       render();
     });
 
@@ -258,6 +302,20 @@
       });
     }
 
+    // "Share" on the shop page shares the current URL as-is, filters and all
+    // (syncURL() above keeps it current as filters change).
+    const shareShopBtn = document.getElementById("shareShopBtn");
+    if (shareShopBtn) {
+      shareShopBtn.addEventListener("click", () => {
+        window.shareLink({
+          url: location.href,
+          title: "Sultan Football Cleats — Shop",
+          text: "Check out these cleats on Sultan Football Cleats",
+        });
+      });
+    }
+
+    syncURL();
     render();
   });
 })();

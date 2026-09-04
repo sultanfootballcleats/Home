@@ -65,6 +65,9 @@
           <a class="btn btn-whatsapp" id="enquireBtn" href="#" target="_blank" rel="noopener">
             Ask on WhatsApp
           </a>
+          <button class="btn btn-outline" type="button" data-share-id="${product.id}">
+            ${window.ICONS.share} Share
+          </button>
         </div>
 
         <ul class="pdp-meta-list">
@@ -76,7 +79,7 @@
     `;
 
     renderAllPrices();
-    document.getElementById("enquireBtn").href = whatsAppEnquiryLink(product.name);
+    document.getElementById("enquireBtn").href = whatsAppEnquiryLink(product);
 
     // Build clickable thumbnails for every product photo plus an optional video.
     const galleryMain = document.getElementById("pdpGalleryMain");
@@ -147,6 +150,7 @@
               ${window.productThumbHTML(p)}
             </div>
           </a>
+          <button class="share-btn" type="button" data-share-id="${p.id}" aria-label="Share ${p.name}" title="Share">${window.ICONS.share}</button>
           <div class="product-body">
             <span class="product-cat">${p.categoryLabel}</span>
             <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
