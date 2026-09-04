@@ -188,7 +188,7 @@ h1,h2,h3,h4{
 
 .header-actions{ display:flex; align-items:center; gap:18px; position:relative; }
 .search-toggle{
-  background:none; border:none; color:white; padding:4px; display:flex; align-items:center;
+  background:none; border:none; color:inherit; padding:4px; display:flex; align-items:center;
 }
 .search-toggle svg{ width:20px; height:20px; }
 .search-box{
@@ -380,6 +380,9 @@ h1,h2,h3,h4{
   display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;
   margin-bottom:32px; padding-bottom:20px; border-bottom:1px solid var(--line);
 }
+.filters-actions{ display:flex; align-items:center; gap:16px; }
+.filters-actions-left{ display:flex; align-items:center; gap:10px; }
+.filters-actions-right{ display:flex; align-items:center; gap:12px; }
 .filter-pills{ display:flex; gap:10px; flex-wrap:wrap; }
 .filter-pill{
   padding:8px 16px; border:1px solid var(--line); border-radius:20px;
@@ -428,6 +431,11 @@ h1,h2,h3,h4{
 .filter-budget-row{ display:flex; gap:8px; align-items:center; }
 .filter-budget-row input{ min-width:0; }
 .filter-budget-row select{ min-width:0; flex:1; width:auto; }
+/* The Size (UK) Range field holds two selects with fairly long labels
+   ("UK 9.5 (EUR 44)") — give it double the column width on desktop and a
+   sensible minimum per select so the text isn't clipped. */
+.filter-field-size{ grid-column: span 2; }
+#filterSizeMin, #filterSizeMax{ min-width:130px; font-size:.8rem; }
 .filter-panel-actions{
   grid-column:1/-1; display:flex; justify-content:flex-end;
 }
@@ -462,7 +470,7 @@ h1,h2,h3,h4{
 .product-body h3{ font-size:1.02rem; letter-spacing:.01em; }
 .product-body .desc{
   font-size:.85rem; color:var(--ink-muted); flex:1;
-  display:-webkit-box; -webkit-line-clamp:2; line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
 }
 .card-size-row{ display:flex; gap:6px; flex-wrap:wrap; margin:2px 0; }
 .card-size-badge{
@@ -824,7 +832,11 @@ h1,h2,h3,h4{
   .product-body h3{ font-size:.92rem; }
   .price{ font-size:1rem; }
   .filters-bar{ align-items:flex-start; }
-  .sort-select{ width:100%; }
+  .filters-actions{ width:100%; flex-wrap:wrap; row-gap:12px; }
+  .filters-actions-left{ flex:1 1 auto; }
+  .filters-actions-right{ flex:1 1 100%; justify-content:space-between; }
+  .sort-select{ flex:1; min-width:0; width:auto; }
+  .filter-field-size{ grid-column:span 1; }
   .feature-band .wrap{ grid-template-columns:1fr 1fr; padding:28px 20px; }
   .footer-top{ grid-template-columns:1fr; padding:48px 20px 30px; gap:32px; }
   .pdp-actions{ flex-direction:column; }
