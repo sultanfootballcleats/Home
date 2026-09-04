@@ -462,7 +462,7 @@ h1,h2,h3,h4{
 .product-body h3{ font-size:1.02rem; letter-spacing:.01em; }
 .product-body .desc{
   font-size:.85rem; color:var(--ink-muted); flex:1;
-  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  display:-webkit-box; -webkit-line-clamp:2; line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
 }
 .card-size-row{ display:flex; gap:6px; flex-wrap:wrap; margin:2px 0; }
 .card-size-badge{
@@ -471,6 +471,24 @@ h1,h2,h3,h4{
   font-family:'Oswald',sans-serif; font-size:.78rem; font-weight:600; letter-spacing:.04em;
   color:var(--navy-950);
 }
+.share-btn{
+  position:absolute; top:12px; right:12px; z-index:2;
+  width:34px; height:34px; border-radius:50%;
+  background:rgba(255,255,255,.92); border:1px solid var(--line);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--navy-950); cursor:pointer; padding:0;
+  transition:background .18s ease, transform .18s ease;
+}
+.share-btn:hover{ background:#fff; transform:scale(1.08); }
+.share-btn svg{ width:16px; height:16px; }
+.share-page-btn{
+  display:inline-flex; align-items:center; gap:8px; padding:10px 16px; border:1px solid var(--line);
+  border-radius:20px; background:#fff; color:var(--navy-950); font-family:'Oswald',sans-serif;
+  font-size:.76rem; letter-spacing:.08em; text-transform:uppercase; cursor:pointer;
+  transition:border-color .15s ease, color .15s ease;
+}
+.share-page-btn:hover{ border-color:var(--navy-800); }
+.share-page-btn svg{ width:15px; height:15px; }
 .product-price-row{ display:flex; align-items:center; justify-content:space-between; margin-top:6px; }
 .price{ font-family:'Oswald',sans-serif; font-size:1.15rem; color:var(--navy-950); }
 .price .alt{ font-size:.72rem; color:var(--ink-muted); font-family:'Manrope',sans-serif; display:block; }
