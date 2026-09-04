@@ -234,9 +234,9 @@ Brand: Knock Offs
 Category: adult-grippers
 Tag: 
 Color: Electric Green
-Size US: 10
-Size UK: 9
-Size EUR: 43
+Size US: 10.5
+Size UK: 9.5
+Size EUR: 44
 Condition (out of 10): 10
 Fault: None
 Price (PKR): 3200
@@ -394,7 +394,7 @@ Condition (out of 10): 10
 Fault: None
 Price (PKR): 3500
 Original Price (PKR): 4500
-Image: assets/products/p20 (1).jpg, assets/products/p20 (2).jpg, assets/products/p20 (3).jpg, assets/products/p20 (4).jpg, assets/products/p20 (5).jpg, assets/products/p20 (6).jpg, assets/products/p20 (7).jpg, assets/products/p20 (8).jpg
+Image: assets/products/p20 (1).jpg, assets/products/p20 (2).jpg, assets/products/p20 (3).jpg, assets/products/p20 (4).jpg, assets/products/p20 (5).jpg, assets/products/p20 (6).jpg, assets/products/p20 (7).jpg
 Video: 
 Description: A genuine pre-owned UMBRO Calcio in Black & White.
 ----------------------------------------
@@ -513,7 +513,7 @@ Condition (out of 10): 10
 Fault: None
 Price (PKR): 4000
 Original Price (PKR): 5600
-Image: assets/products/p27 (1).jpg, assets/products/p27 (2).jpg, assets/products/p27 (3).jpg, assets/products/p27 (4).jpg, assets/products/p27 (5).jpg, assets/products/p27 (6).jpg, assets/products/p27 (7).jpg, assets/products/p27 (8).jpg
+Image: assets/products/p27 (1).jpg, assets/products/p27 (2).jpg, assets/products/p27 (3).jpg, assets/products/p27 (4).jpg, assets/products/p27 (5).jpg, assets/products/p27 (6).jpg, assets/products/p27 (7).jpg
 Video: 
 Description: A genuine pre-owned NIKE Mercurial Superfly 8 Club in Black & Silver.
 ----------------------------------------
@@ -700,7 +700,7 @@ Condition (out of 10): 10
 Fault: None
 Price (PKR): 3200
 Original Price (PKR): 5400
-Image: assets/products/p38 (1).jpg, assets/products/p38 (2).jpg, assets/products/p38 (3).jpg, assets/products/p38 (4).jpg, assets/products/p38 (5).jpg, assets/products/p38 (6).jpg, assets/products/p38 (7).jpg, assets/products/p38 (8).jpg
+Image: assets/products/p38 (1).jpg, assets/products/p38 (2).jpg, assets/products/p38 (3).jpg, assets/products/p38 (4).jpg, assets/products/p38 (5).jpg, assets/products/p38 (6).jpg, assets/products/p38 (7).jpg
 Video: 
 Description: A genuine pre-owned ADIDAS Messi 15.4 in Light Blue & Yellow.
 ----------------------------------------
@@ -1611,9 +1611,9 @@ Brand: ADIDAS
 Category: adult-grippers
 Tag: 
 Color: White with Red Stripes
-Size US: 11
-Size UK: 10
-Size EUR: 45
+Size US: 11.5
+Size UK: 11
+Size EUR: 46
 Condition (out of 10): 9
 Fault: Signs of wear
 Price (PKR): 4000
@@ -1791,4 +1791,38 @@ Original Price (PKR): 8000
 Image: assets/products/p103 (1).jpg, assets/products/p103 (2).jpg, assets/products/p103 (3).jpg, assets/products/p103 (4).jpg, assets/products/p103 (5).jpg, assets/products/p103 (6).jpg, assets/products/p103 (7).jpg, assets/products/p103 (8).jpg
 Video: 
 Description: A genuine pre-owned ADIDAS Nemeziz Tango 17.4 in Red & Black.
+----------------------------------------
+Product ID: p104
+Name: MIZUNO Morelia Neo IV
+Brand: MIZUNO
+Category: adult-studs
+Tag: 
+Color: Black & Red
+Size US: 10.5
+Size UK: 9.5
+Size EUR: 44
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 6000
+Original Price (PKR): 8000
+Image: assets/products/p104 (1).jpg, assets/products/p104 (2).jpg, assets/products/p104 (3).jpg, assets/products/p104 (4).jpg, assets/products/p104 (5).jpg, assets/products/p104 (6).jpg, assets/products/p104 (7).jpg, assets/products/p104 (8).jpg
+Video: 
+Description: A genuine pre-owned MIZUNO Morelia Neo IV in Black & Red.
+----------------------------------------
+Product ID: p105
+Name: UMBRO Tocco Pro
+Brand: UMBRO
+Category: adult-studs
+Tag: 
+Color: White
+Size US: 9
+Size UK: 8
+Size EUR: 42.5
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 5000
+Original Price (PKR): 7500
+Image: assets/products/p105 (1).jpg, assets/products/p105 (2).jpg, assets/products/p105 (3).jpg, assets/products/p105 (4).jpg, assets/products/p105 (5).jpg, assets/products/p105 (6).jpg, assets/products/p105 (7).jpg, assets/products/p105 (8).jpg
+Video: 
+Description: A genuine pre-owned UMBRO Tocco Pro in White.
 ----------------------------------------
