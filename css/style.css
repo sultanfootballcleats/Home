@@ -188,7 +188,7 @@ h1,h2,h3,h4{
 
 .header-actions{ display:flex; align-items:center; gap:18px; position:relative; }
 .search-toggle{
-  background:none; border:none; color:inherit; padding:4px; display:flex; align-items:center;
+  background:none; border:none; color:white; padding:4px; display:flex; align-items:center;
 }
 .search-toggle svg{ width:20px; height:20px; }
 .search-box{
