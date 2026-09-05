@@ -219,39 +219,15 @@ window.uniqueBrands = uniqueBrands;
 window.uniqueSizesUK = uniqueSizesUK;
 
 /* ---------------------------------- Currency ---------------------------------- */
-function getCurrency() {
-  return localStorage.getItem("sultan_currency") || "USD";
-}
-function setCurrency(cur) {
-  localStorage.setItem("sultan_currency", cur);
-  document.dispatchEvent(new CustomEvent("currencychange"));
-}
+// Prices are stored in USD in data/products.txt (see `price` field) but the
+// storefront always displays PKR as the primary, real price customers pay —
+// USD is shown only as a small secondary reference (see `.alt` in style.css).
+// There's no toggle anymore, so this is fixed rather than read from a setting.
 function formatPrice(usdAmount, { primaryOnly = false } = {}) {
-  const cur = getCurrency();
   const usd = `${STORE.currencySymbolUSD}${usdAmount.toFixed(2)}`;
   const pkr = `${STORE.currencySymbolPKR}${Math.round(usdAmount * STORE.usdToPkr).toLocaleString("en-US")}`;
-  if (primaryOnly) return cur === "USD" ? usd : pkr;
-  return cur === "USD"
-    ? `${usd}<span class="alt">${pkr}</span>`
-    : `${pkr}<span class="alt">${usd}</span>`;
-}
-
-function initCurrencyToggle() {
-  document.querySelectorAll("[data-currency-toggle]").forEach((wrap) => {
-    const cur = getCurrency();
-    wrap.querySelectorAll("button").forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.currency === cur);
-      btn.addEventListener("click", () => {
-        setCurrency(btn.dataset.currency);
-      });
-    });
-  });
-  document.addEventListener("currencychange", () => {
-    document.querySelectorAll("[data-currency-toggle] button").forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.currency === getCurrency());
-    });
-    renderAllPrices();
-  });
+  if (primaryOnly) return pkr;
+  return `${pkr}<span class="alt">${usd}</span>`;
 }
 function renderAllPrices() {
   document.querySelectorAll("[data-price]").forEach((el) => {
@@ -725,7 +701,6 @@ window.productGalleryHTML = productGalleryHTML;
 /* ---------------------------------- Init on every page ---------------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
   initHeader();
-  initCurrencyToggle();
   updateCartCount();
   renderAllPrices();
   document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
