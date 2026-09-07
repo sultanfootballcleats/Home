@@ -1843,7 +1843,7 @@ Image: assets/products/p106 (1).jpg, assets/products/p106 (2).jpg, assets/produc
 Video: 
 Description: A genuine and comfortable pair of grip socks in premium quality with no Branding in White with Black Stripes.
 ----------------------------------------
-Product ID: p106
+Product ID: p107
 Name: Black Grip Socks
 Brand: NONE
 Category: accessories
