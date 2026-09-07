@@ -739,7 +739,7 @@ Video:
 Description: A genuine pre-owned NIKE Tiempo Legend II in Black & White.
 ----------------------------------------
 Product ID: p41
-Name: NIKE Bobma
+Name: NIKE Bobma (SOLD)
 Brand: NIKE
 Category: adult-grippers
 Tag: 
@@ -748,7 +748,7 @@ Size US: 9.5
 Size UK: 8.5
 Size EUR: 43
 Condition (out of 10): 9
-Fault: Slightly Repaired
+Fault: SOLD
 Price (PKR): 3000
 Original Price (PKR): 6300
 Image: assets/products/p41 (1).jpg, assets/products/p41 (2).jpg, assets/products/p41 (3).jpg, assets/products/p41 (4).jpg, assets/products/p41 (5).jpg, assets/products/p41 (6).jpg, assets/products/p41 (7).jpg, assets/products/p41 (8).jpg
@@ -1030,7 +1030,7 @@ Description: A genuine pre-owned NIKE Hypervenom Phelon II in Neon Yellow & Blac
 Product ID: p59
 Name: PUMA One 20.4
 Brand: PUMA
-Category: adult-studs
+Category: adult-grippers
 Tag: 
 Color: Pink & Lime
 Size US: 8
