@@ -1096,16 +1096,16 @@ Video:
 Description: A genuine pre-owned NIKE Mercurial Vapor XI in Pink & White.
 ----------------------------------------
 Product ID: p63
-Name: ⭕ADIDAS Predator 18.1 (SOLD)
+Name: ADIDAS Predator 18.1
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Rose Gold
 Size US: 9
 Size UK: 8.5
 Size EUR: 42.75
 Condition (out of 10): 10
-Fault: None
+Fault: SOLD
 Price (PKR): 4300
 Original Price (PKR): 6900
 Image: assets/products/p63 (1).jpg, assets/products/p63 (2).jpg, assets/products/p63 (3).jpg, assets/products/p63 (4).jpg, assets/products/p63 (5).jpg, assets/products/p63 (6).jpg, assets/products/p63 (7).jpg, assets/products/p63 (8).jpg
@@ -1113,16 +1113,16 @@ Video:
 Description: A genuine pre-owned ADIDAS Predator 18.1 in Rose Gold.
 ----------------------------------------
 Product ID: p64
-Name: ⭕NIKE Phantom GT2 (SOLD)
+Name: NIKE Phantom GT2
 Brand: NIKE
 Category: adult-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Black
 Size US: 8
 Size UK: 7
 Size EUR: 41
 Condition (out of 10): 10
-Fault: None
+Fault: SOLD
 Price (PKR): 5000
 Original Price (PKR): 8000
 Image: assets/products/p64 (1).jpg, assets/products/p64 (2).jpg, assets/products/p64 (3).jpg, assets/products/p64 (4).jpg, assets/products/p64 (5).jpg, assets/products/p64 (6).jpg, assets/products/p64 (7).jpg, assets/products/p64 (8).jpg
