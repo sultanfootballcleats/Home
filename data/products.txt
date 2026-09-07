@@ -739,10 +739,10 @@ Video:
 Description: A genuine pre-owned NIKE Tiempo Legend II in Black & White.
 ----------------------------------------
 Product ID: p41
-Name: ⭕NIKE Bobma (SOLD)
+Name: NIKE Bobma
 Brand: NIKE
 Category: adult-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Silver & Green
 Size US: 9.5
 Size UK: 8.5
