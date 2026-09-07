@@ -1826,3 +1826,38 @@ Image: assets/products/p105 (1).jpg, assets/products/p105 (2).jpg, assets/produc
 Video: 
 Description: A genuine pre-owned UMBRO Tocco Pro in White.
 ----------------------------------------
+Product ID: p106
+Name: White Grip Socks
+Brand: NONE
+Category: accessories
+Tag: 
+Color: White
+Size US: 6-12
+Size UK: 5-11
+Size EUR: 37-46
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 750
+Original Price (PKR): 800
+Image: assets/products/p106 (1).jpg, assets/products/p106 (2).jpg, assets/products/p106 (3).jpg, assets/products/p106 (4).jpg, assets/products/p106 (5).jpg, assets/products/p106 (6).jpg, assets/products/p106 (7).jpg
+Video: 
+Description: A genuine and comfortable pair of grip socks in premium quality with no Branding in White with Black Stripes.
+----------------------------------------
+Product ID: p106
+Name: Black Grip Socks
+Brand: NONE
+Category: accessories
+Tag: 
+Color: Black
+Size US: 6-12
+Size UK: 5-11
+Size EUR: 37-46
+Condition (out of 10): 10
+Fault: None
+Price (PKR): 750
+Original Price (PKR): 800
+Image: assets/products/p107 (1).jpg, assets/products/p107 (2).jpg, assets/products/p107 (3).jpg, assets/products/p107 (4).jpg, assets/products/p107 (5).jpg, assets/products/p107 (6).jpg, assets/products/p107 (7).jpg
+Video: 
+Description: A genuine and comfortable pair of grip socks in premium quality with no Branding in Black with White Stripes.
+----------------------------------------
+
