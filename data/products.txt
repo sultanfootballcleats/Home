@@ -1286,7 +1286,7 @@ Product ID: p74
 Name: ADIDAS X 17.1
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black
 Size US: 9.5
 Size UK: 9
@@ -1456,7 +1456,7 @@ Product ID: p84
 Name: NIKE Mercurial Vapor 12
 Brand: NIKE
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black on Black
 Size US: 10.5
 Size UK: 9.5
@@ -1558,7 +1558,7 @@ Product ID: p90
 Name: ADIDAS Goletto VII
 Brand: ADIDAS
 Category: kids-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Black
 Size US: 5.5
 Size UK: 5
@@ -1779,7 +1779,7 @@ Product ID: p103
 Name: ADIDAS Nemeziz Tango 17.4
 Brand: ADIDAS
 Category: adult-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Red & Black
 Size US: 9
 Size UK: 8.5
