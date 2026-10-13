@@ -914,3 +914,34 @@ h1,h2,h3,h4{
 @media (max-width:700px){
   .cart-item-info .thumb{ width:92px; height:92px; }
 }
+
+/* ---------- Remove frame around product images ---------- */
+
+/* Shop cards */
+.product-media{
+  padding:0;
+  background:#fff;
+}
+.product-media .product-thumb-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;   /* fills the box edge to edge */
+}
+
+/* Product page */
+.pdp-gallery-main,
+.pdp-gallery-main.has-zoom{
+  padding:0;
+  aspect-ratio:1/1;   /* matches square photos; remove this line to keep 4:5 */
+  background:#fff;
+}
+.pdp-gallery-main .pdp-main-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;   /* fills the box; photos are portrait so only blank top/bottom is trimmed */
+  object-position:center;
+}
+
+@media (max-width:980px){
+  .pdp-gallery-main{ padding:0; }
+}
