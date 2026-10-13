@@ -1172,8 +1172,8 @@ Color: Black & Lime Green
 Size US: 9.5
 Size UK: 9
 Size EUR: 43.33
-Condition (out of 10): 10
-Fault: None
+Condition (out of 10): 9
+Fault: Right shoe slightly torn.
 Price (PKR): 4500
 Original Price (PKR): 6500
 Image: assets/products/p67 (1).jpg, assets/products/p67 (2).jpg, assets/products/p67 (3).jpg, assets/products/p67 (4).jpg, assets/products/p67 (5).jpg, assets/products/p67 (6).jpg, assets/products/p67 (7).jpg, assets/products/p67 (8).jpg
