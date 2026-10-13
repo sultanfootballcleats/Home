@@ -351,7 +351,7 @@ Product ID: p18
 Name: PUMA Capitano
 Brand: PUMA
 Category: adult-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Black & White
 Size US: 8.5
 Size UK: 7.5
@@ -555,7 +555,7 @@ Product ID: p30
 Name: ADIDAS Speedportal.3
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black & Orange
 Size US: 10
 Size UK: 9.5
@@ -674,7 +674,7 @@ Product ID: p37
 Name: NIKE Air Zoom Mercurial Vapor 15
 Brand: NIKE
 Category: kids-studs
-Tag: Best Deal
+Tag: ⭕SOLD
 Color: Black & Blue
 Size US: 5
 Size UK: 4.5
@@ -861,7 +861,7 @@ Product ID: p49
 Name: ADIDAS Predator Accuracy.4
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Blue & Light Blue
 Size US: 9.5
 Size UK: 9
@@ -980,7 +980,7 @@ Product ID: p56
 Name: NIKE Phantom GT2
 Brand: NIKE
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black & Volt
 Size US: 8
 Size UK: 7
@@ -1643,7 +1643,7 @@ Product ID: p95
 Name: NIKE Hypervenom Phantom 3 Elite
 Brand: NIKE
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Dark Grey & Orange
 Size US: 9
 Size UK: 8
@@ -1796,7 +1796,7 @@ Product ID: p104
 Name: MIZUNO Morelia Neo IV
 Brand: MIZUNO
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black & Red
 Size US: 10.5
 Size UK: 9.5
