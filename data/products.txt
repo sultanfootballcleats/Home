@@ -458,8 +458,8 @@ Color: Black
 Size US: 12.5
 Size UK: 12
 Size EUR: 47.5
-Condition (out of 10): 10
-Fault: None
+Condition (out of 10): 8
+Fault: Slightly Repaired right shoe
 Price (PKR): 3000
 Original Price (PKR): 5400
 Image: assets/products/p24 (1).jpg, assets/products/p24 (2).jpg, assets/products/p24 (3).jpg, assets/products/p24 (4).jpg, assets/products/p24 (5).jpg, assets/products/p24 (6).jpg, assets/products/p24 (7).jpg, assets/products/p24 (8).jpg
