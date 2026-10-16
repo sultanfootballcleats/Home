@@ -74,6 +74,8 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Nationwide delivery — Rs. ${window.STORE.deliveryPKR}/- per pair, cash on delivery available</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> One-of-a-kind pair — once it's sold, it's gone</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Order confirmed directly with our team on WhatsApp</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span>Exchange or return within 7 days if damaged or the wrong size (unused shoe). <a href="policy.html" style="text-decoration:underline;">Read the full policy</a></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span>Please record a continuous video of the parcel unboxing — required for damaged-product returns or exchanges</span></li>
         </ul>
       </div>
     `;

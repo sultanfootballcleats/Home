@@ -664,6 +664,13 @@ window.openImageZoom = openImageZoom;
 function initHeader() {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".main-nav");
+  // Shared nav link added here so every page gets it without editing each page's header.
+  if (nav && !nav.querySelector('a[href="policy.html"]')) {
+    const policyLink = document.createElement("a");
+    policyLink.href = "policy.html";
+    policyLink.textContent = "Returns";
+    nav.appendChild(policyLink);
+  }
   if (toggle && nav) {
     toggle.addEventListener("click", () => nav.classList.toggle("open"));
     nav.querySelectorAll("a").forEach((a) =>

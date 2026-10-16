@@ -13,10 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="footer-col">
         <h4>Shop</h4>
         <ul>
-          <li><a href="shop.html?cat=adult-studs">Adult Studs</a></li>
-          <li><a href="shop.html?cat=kids-studs">Kids Studs</a></li>
-          <li><a href="shop.html?cat=adult-grippers">Adult Grippers</a></li>
-          <li><a href="shop.html?cat=kids-grippers">Kids Grippers</a></li>
+          <li><a href="shop.html?type=studs">Studs</a></li>
+          <li><a href="shop.html?type=grippers">Grippers</a></li>
+          <li><a href="shop.html?cat=accessories">Accessories</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -24,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <ul>
           <li><a href="about.html">About Sultan</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="policy.html">Exchange &amp; Refund Policy</a></li>
           <li><a href="cart.html">Your Cart</a></li>
         </ul>
       </div>
