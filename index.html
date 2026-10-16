@@ -10,7 +10,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/reviews.css" />
 </head>
 <body>
 
@@ -134,57 +133,40 @@
   </div>
 </section>
 
-<section class="section reviews" id="reviews" aria-labelledby="reviewsTitle" hidden>
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">Customer Reviews</span>
-        <h2 id="reviewsTitle">What Our Customers Say</h2>
-      </div>
-      <p>Real feedback from real footballers, straight from our WhatsApp chats.</p>
-    </div>
-    <ul class="reviews-grid" id="reviewsGrid"></ul>
-    <div class="reviews-cta">
-      <button type="button" class="btn btn-outline" id="reviewsAll">See All Reviews</button>
-    </div>
-  </div>
-</section>
-
 <footer class="site-footer" id="footer"></footer>
 
 <script src="js/main.js"></script>
 <script src="js/footer.js"></script>
-<script src="js/reviews.js"></script>
 <script>
-window.PRODUCTS_READY.then(function(){
-  const grid = document.getElementById("featuredGrid");
-  window.wireProductCardLinks(grid);
-  const featured = PRODUCTS.filter(p => p.tag).slice(0, 4);
-  function accentGradient(hex){ return `linear-gradient(135deg, ${hex}22, #C9CFD8 40%, #EDEFF2 60%, ${hex}33)`; }
-  grid.innerHTML = featured.map(p => `
-    <article class="product-card" data-id="${p.id}">
-      <a href="product.html?id=${p.id}">
-        <div class="product-media" style="background:${accentGradient(p.accent)}">
-          ${p.tag ? `<span class="product-tag">${p.tag}</span>` : ""}
-          ${productThumbHTML(p)}
+  window.PRODUCTS_READY.then(function(){
+    const grid = document.getElementById("featuredGrid");
+    window.wireProductCardLinks(grid);
+    const featured = PRODUCTS.filter(p => p.tag).slice(0, 4);
+    function accentGradient(hex){ return `linear-gradient(135deg, ${hex}22, #C9CFD8 40%, #EDEFF2 60%, ${hex}33)`; }
+    grid.innerHTML = featured.map(p => `
+      <article class="product-card" data-id="${p.id}">
+        <a href="product.html?id=${p.id}">
+          <div class="product-media" style="background:${accentGradient(p.accent)}">
+            ${p.tag ? `<span class="product-tag">${p.tag}</span>` : ""}
+            ${productThumbHTML(p)}
+          </div>
+        </a>
+        <div class="product-body">
+          <span class="product-cat">${p.categoryLabel}</span>
+          <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
+          ${renderStars(p.condition)}
+          <div class="card-size-row">
+            <span class="card-size-badge">UK ${p.sizeUK}</span>
+            <span class="card-size-badge">EUR ${p.sizeEUR}</span>
+          </div>
+          <div class="product-price-row"><span class="price" data-price="${p.price}"></span></div>
+          <a class="btn btn-outline btn-block" href="product.html?id=${p.id}">View Details</a>
         </div>
-      </a>
-      <div class="product-body">
-        <span class="product-cat">${p.categoryLabel}</span>
-        <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
-        ${renderStars(p.condition)}
-        <div class="card-size-row">
-          <span class="card-size-badge">UK ${p.sizeUK}</span>
-          <span class="card-size-badge">EUR ${p.sizeEUR}</span>
-        </div>
-        <div class="product-price-row"><span class="price" data-price="${p.price}"></span></div>
-        <a class="btn btn-outline btn-block" href="product.html?id=${p.id}">View Details</a>
-      </div>
-    </article>`).join("");
-  renderAllPrices();
-  const statPairs = document.getElementById("statPairs");
-  if (statPairs) statPairs.textContent = "100+";
-});
+      </article>`).join("");
+    renderAllPrices();
+    const statPairs = document.getElementById("statPairs");
+    if (statPairs) statPairs.textContent = "100+";
+  });
 </script>
 </body>
 </html>
