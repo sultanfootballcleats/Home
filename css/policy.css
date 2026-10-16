@@ -1,0 +1,6 @@
+/* Exchange & Refund Policy page (policy.html). Reuses .value-card / .num from style.css. */
+.policy-grid{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:28px; }
+.policy-grid .value-card h3{ font-size:1.05rem; }
+.policy-grid .value-card p{ font-size:.95rem; line-height:1.6; }
+.policy-actions{ margin-top:40px; display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+@media (max-width:700px){ .policy-grid{ grid-template-columns:1fr; gap:16px; } }
