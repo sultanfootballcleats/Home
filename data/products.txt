@@ -362,7 +362,8 @@ Price (PKR): 3000
 Original Price (PKR): 4300
 Image: assets/products/p18 (1).jpg, assets/products/p18 (2).jpg, assets/products/p18 (3).jpg, assets/products/p18 (4).jpg, assets/products/p18 (5).jpg, assets/products/p18 (6).jpg, assets/products/p18 (7).jpg, assets/products/p18 (8).jpg
 Video: 
-Description: A genuine pre-owned PUMA Capitano in Black & White.
+Description: ⭕SOLD
+A genuine pre-owned PUMA Capitano in Black & White.
 ----------------------------------------
 Product ID: p19
 Name: PUMA Powercat 3.10
