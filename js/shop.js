@@ -3,6 +3,12 @@
   const grid = document.getElementById("productGrid");
   if (!grid) return;
   window.wireProductCardLinks(grid);
+  // The search term comes from the URL (?q=...) and the search box, so it must be escaped
+  // before being placed into innerHTML (otherwise ?q=<img onerror=...> runs script).
+  function escapeHTML(str) {
+    return String(str).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+
 
   window.PRODUCTS_READY.then(() => {
     const pillsWrap = document.getElementById("filterPills");
@@ -237,7 +243,7 @@
       if (!list.length) {
         grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1;">
           <div class="crown-mark">${window.ICONS.crown}</div>
-          <h3>${searchTerm ? `No pairs match "${searchTerm}"` : "No pairs match these filters right now"}</h3>
+          <h3>${searchTerm ? `No pairs match "${escapeHTML(searchTerm)}"` : "No pairs match these filters right now"}</h3>
           <p>${searchTerm ? "Try a different name, brand, or size." : "Try loosening a filter, or check back soon."}</p>
         </div>`;
       } else {
