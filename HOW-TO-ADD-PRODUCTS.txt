@@ -1,0 +1,63 @@
+HOW TO ADD, EDIT, OR REMOVE A PRODUCT
+=====================================
+
+All product data now lives in ONE plain text file:
+
+    data/products.txt
+
+Open it in any text editor (Notepad, TextEdit, VS Code, etc). Full
+instructions for the format are written right at the top of that file
+itself, so you always have them on hand while editing. In short:
+
+1. Each product is a block of "Label: value" lines (Product ID, Name,
+   Brand, Category, Size, Condition, Price, Image, etc).
+2. A line of dashes ("----------") separates one product from the next.
+3. To add a new pair: copy one whole block, paste it above or below,
+   and edit the values. Give it a unique Product ID (e.g. the next
+   free number, like p137).
+4. To edit a pair: find its block and change whatever value needs
+   updating.
+5. To remove a pair: delete its whole block (from "Product ID:" down
+   to the dashed line after it).
+6. Save the file. Refresh the website — your changes are live
+   immediately. Nothing else needs to change.
+
+Lines starting with "#" in data/products.txt are just notes for you
+and are ignored by the website — feel free to leave them there for
+reference.
+
+A NOTE ON CONDITION
+--------------------
+"Condition (out of 10)" is what turns into the star rating shown to
+customers: 10 = 5 stars, 9 = 4.5 stars, 8 = 4 stars, and so on. You
+never need to set the stars yourself — just fill in the honest
+condition number and the site does the rest.
+
+ADDING PHOTOS
+--------------
+Drop an image at assets/products/<id>.jpg (or .png/.webp) named to
+match the product's Product ID (e.g. assets/products/p2.jpg), then
+point the "Image" line in data/products.txt at that path. Until a
+photo is added, a placeholder boot icon is shown instead, so the site
+is safe to publish right now. See assets/products/README.txt for more
+on naming and adding photos/videos.
+
+ADDING MULTIPLE ANGLES OF THE SAME PAIR
+------------------------------------------
+Want more than one photo per pair (front, side, sole, etc)? List
+several file paths on the same "Image:" line, separated by commas:
+
+    Image: assets/products/p2.jpg, assets/products/p2-side.jpg, assets/products/p2-sole.jpg
+
+The first photo becomes the main card/thumbnail image; every photo on
+that line shows up as a clickable thumbnail on that product's page so
+customers can browse all the angles.
+
+ONE IMPORTANT TECHNICAL NOTE
+------------------------------
+Because the website now reads data/products.txt over the network,
+this only works when the site is actually being served (e.g. the
+live hosted website, or a local test server) — not when you just
+double-click index.html to open it straight from your computer's
+file system. If you ever test locally and the shop page looks empty,
+that's why; it will work correctly once it's hosted normally.
