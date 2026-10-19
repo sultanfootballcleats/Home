@@ -351,7 +351,7 @@ Product ID: p18
 Name: PUMA Capitano
 Brand: PUMA
 Category: adult-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Black & White
 Size US: 8.5
 Size UK: 7.5
@@ -362,7 +362,7 @@ Price (PKR): 3000
 Original Price (PKR): 4300
 Image: assets/products/p18 (1).jpg, assets/products/p18 (2).jpg, assets/products/p18 (3).jpg, assets/products/p18 (4).jpg, assets/products/p18 (5).jpg, assets/products/p18 (6).jpg, assets/products/p18 (7).jpg, assets/products/p18 (8).jpg
 Video: 
-Description: A genuine pre-owned PUMA Capitano in Black & White.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p19
 Name: PUMA Powercat 3.10
@@ -419,7 +419,7 @@ Product ID: p22
 Name: XBLADES Intercept Flash
 Brand: XBLADES
 Category: kids-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Pink & Blue
 Size US: 5
 Size UK: 4
@@ -430,7 +430,7 @@ Price (PKR): 2900
 Original Price (PKR): 4500
 Image: assets/products/p22 (1).jpg, assets/products/p22 (2).jpg, assets/products/p22 (3).jpg, assets/products/p22 (4).jpg, assets/products/p22 (5).jpg, assets/products/p22 (6).jpg, assets/products/p22 (7).jpg, assets/products/p22 (8).jpg
 Video: 
-Description: A genuine pre-owned XBLADES Intercept Flash in Pink & Blue.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p23
 Name: ADIDAS Copa Mundial
@@ -453,18 +453,18 @@ Product ID: p24
 Name: ADIDAS Predator Accuracy.3
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black
 Size US: 12.5
 Size UK: 12
 Size EUR: 47.5
-Condition (out of 10): 10
-Fault: None
+Condition (out of 10): 8
+Fault: Slightly Repaired right shoe
 Price (PKR): 3000
 Original Price (PKR): 5400
 Image: assets/products/p24 (1).jpg, assets/products/p24 (2).jpg, assets/products/p24 (3).jpg, assets/products/p24 (4).jpg, assets/products/p24 (5).jpg, assets/products/p24 (6).jpg, assets/products/p24 (7).jpg, assets/products/p24 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS Predator Accuracy.3 in Black.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p25
 Name: CANTERBURY Phoenix 2.0 SG
@@ -555,7 +555,7 @@ Product ID: p30
 Name: ADIDAS Speedportal.3
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black & Orange
 Size US: 10
 Size UK: 9.5
@@ -566,7 +566,7 @@ Price (PKR): 4500
 Original Price (PKR): 8500
 Image: assets/products/p30 (1).jpg, assets/products/p30 (2).jpg, assets/products/p30 (3).jpg, assets/products/p30 (4).jpg, assets/products/p30 (5).jpg, assets/products/p30 (6).jpg, assets/products/p30 (7).jpg, assets/products/p30 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS Speedportal.3 in Black & Orange.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p31
 Name: NIKE Tiempo Legend 9 Elite
@@ -674,7 +674,7 @@ Product ID: p37
 Name: NIKE Air Zoom Mercurial Vapor 15
 Brand: NIKE
 Category: kids-studs
-Tag: Best Deal
+Tag: ⭕SOLD
 Color: Black & Blue
 Size US: 5
 Size UK: 4.5
@@ -685,7 +685,7 @@ Price (PKR): 3500
 Original Price (PKR): 7599
 Image: assets/products/p37 (1).jpg, assets/products/p37 (2).jpg, assets/products/p37 (3).jpg, assets/products/p37 (4).jpg, assets/products/p37 (5).jpg, assets/products/p37 (6).jpg, assets/products/p37 (7).jpg, assets/products/p37 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Air Zoom Mercurial Vapor 15 in Black & Blue.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p38
 Name: ADIDAS Messi 15.4
@@ -753,7 +753,7 @@ Price (PKR): 3000
 Original Price (PKR): 6300
 Image: assets/products/p41 (1).jpg, assets/products/p41 (2).jpg, assets/products/p41 (3).jpg, assets/products/p41 (4).jpg, assets/products/p41 (5).jpg, assets/products/p41 (6).jpg, assets/products/p41 (7).jpg, assets/products/p41 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Bobma in Silver & Green.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p42
 Name: UMBRO Vintage Speciali
@@ -827,7 +827,7 @@ Product ID: p46
 Name: BIAYVISAS Football grippers
 Brand: BIAYVISAS
 Category: kids-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Gold & Black
 Size US: 5
 Size UK: 4
@@ -838,7 +838,7 @@ Price (PKR): 2300
 Original Price (PKR): 4000
 Image: assets/products/p46 (1).jpg, assets/products/p46 (2).jpg, assets/products/p46 (3).jpg, assets/products/p46 (4).jpg, assets/products/p46 (5).jpg, assets/products/p46 (6).jpg, assets/products/p46 (7).jpg
 Video: 
-Description: A genuine pre-owned BIAYVISAS Football grippers in Gold & Black.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p47
 Name: ADIDAS X19.3
@@ -861,7 +861,7 @@ Product ID: p49
 Name: ADIDAS Predator Accuracy.4
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Blue & Light Blue
 Size US: 9.5
 Size UK: 9
@@ -872,7 +872,7 @@ Price (PKR): 4500
 Original Price (PKR): 6500
 Image: assets/products/p49 (1).jpg, assets/products/p49 (2).jpg, assets/products/p49 (3).jpg, assets/products/p49 (4).jpg, assets/products/p49 (5).jpg, assets/products/p49 (6).jpg, assets/products/p49 (7).jpg, assets/products/p49 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS Predator Accuracy.4 in Blue & Light Blue.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p50
 Name: NIKE Force Savage Elite TD
@@ -980,7 +980,7 @@ Product ID: p56
 Name: NIKE Phantom GT2
 Brand: NIKE
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black & Volt
 Size US: 8
 Size UK: 7
@@ -991,7 +991,7 @@ Price (PKR): 3700
 Original Price (PKR): 5400
 Image: assets/products/p56 (1).jpg, assets/products/p56 (2).jpg, assets/products/p56 (3).jpg, assets/products/p56 (4).jpg, assets/products/p56 (5).jpg, assets/products/p56 (6).jpg, assets/products/p56 (7).jpg, assets/products/p56 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Phantom GT2 in Black & Volt.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p57
 Name: NIKE Tiempo Legend 10
@@ -1110,7 +1110,7 @@ Price (PKR): 4300
 Original Price (PKR): 6900
 Image: assets/products/p63 (1).jpg, assets/products/p63 (2).jpg, assets/products/p63 (3).jpg, assets/products/p63 (4).jpg, assets/products/p63 (5).jpg, assets/products/p63 (6).jpg, assets/products/p63 (7).jpg, assets/products/p63 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS Predator 18.1 in Rose Gold.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p64
 Name: NIKE Phantom GT2
@@ -1127,7 +1127,7 @@ Price (PKR): 5000
 Original Price (PKR): 8000
 Image: assets/products/p64 (1).jpg, assets/products/p64 (2).jpg, assets/products/p64 (3).jpg, assets/products/p64 (4).jpg, assets/products/p64 (5).jpg, assets/products/p64 (6).jpg, assets/products/p64 (7).jpg, assets/products/p64 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Phantom GT2 in Black.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p65
 Name: UMBRO Attacante
@@ -1172,8 +1172,8 @@ Color: Black & Lime Green
 Size US: 9.5
 Size UK: 9
 Size EUR: 43.33
-Condition (out of 10): 10
-Fault: None
+Condition (out of 10): 9
+Fault: Right shoe slightly torn.
 Price (PKR): 4500
 Original Price (PKR): 6500
 Image: assets/products/p67 (1).jpg, assets/products/p67 (2).jpg, assets/products/p67 (3).jpg, assets/products/p67 (4).jpg, assets/products/p67 (5).jpg, assets/products/p67 (6).jpg, assets/products/p67 (7).jpg, assets/products/p67 (8).jpg
@@ -1297,7 +1297,7 @@ Price (PKR): 5300
 Original Price (PKR): 7000
 Image: assets/products/p74 (1).jpg, assets/products/p74 (2).jpg, assets/products/p74 (3).jpg, assets/products/p74 (4).jpg, assets/products/p74 (5).jpg, assets/products/p74 (6).jpg, assets/products/p74 (7).jpg, assets/products/p74 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS X 17.1 in Black.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p75
 Name: NIKE Air Zoom Mercurial Vapor 16
@@ -1467,7 +1467,7 @@ Price (PKR): 4800
 Original Price (PKR): 6500
 Image: assets/products/p84 (1).jpg, assets/products/p84 (2).jpg, assets/products/p84 (3).jpg, assets/products/p84 (4).jpg, assets/products/p84 (5).jpg, assets/products/p84 (6).jpg, assets/products/p84 (7).jpg, assets/products/p84 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Mercurial Vapor 12 in Black on Black.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p85
 Name: PUMA EvoKnit
@@ -1569,7 +1569,7 @@ Price (PKR): 4500
 Original Price (PKR): 6500
 Image: assets/products/p90 (1).jpg, assets/products/p90 (2).jpg, assets/products/p90 (3).jpg, assets/products/p90 (4).jpg, assets/products/p90 (5).jpg, assets/products/p90 (6).jpg, assets/products/p90 (7).jpg, assets/products/p90 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS Goletto VII in Black.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p91
 Name: ADIDAS X Ghosted.2
@@ -1643,7 +1643,7 @@ Product ID: p95
 Name: NIKE Hypervenom Phantom 3 Elite
 Brand: NIKE
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Dark Grey & Orange
 Size US: 9
 Size UK: 8
@@ -1654,7 +1654,7 @@ Price (PKR): 3500
 Original Price (PKR): 6500
 Image: assets/products/p95 (1).jpg, assets/products/p95 (2).jpg, assets/products/p95 (3).jpg, assets/products/p95 (4).jpg, assets/products/p95 (5).jpg, assets/products/p95 (6).jpg, assets/products/p95 (7).jpg, assets/products/p95 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Hypervenom Phantom 3 Elite in Dark Grey & Orange.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p96
 Name: ADIDAS X Ghosted.3
@@ -1790,13 +1790,13 @@ Price (PKR): 6000
 Original Price (PKR): 8000
 Image: assets/products/p103 (1).jpg, assets/products/p103 (2).jpg, assets/products/p103 (3).jpg, assets/products/p103 (4).jpg, assets/products/p103 (5).jpg, assets/products/p103 (6).jpg, assets/products/p103 (7).jpg, assets/products/p103 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS Nemeziz Tango 17.4 in Red & Black.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p104
 Name: MIZUNO Morelia Neo IV
 Brand: MIZUNO
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black & Red
 Size US: 10.5
 Size UK: 9.5
@@ -1807,7 +1807,7 @@ Price (PKR): 6000
 Original Price (PKR): 8000
 Image: assets/products/p104 (1).jpg, assets/products/p104 (2).jpg, assets/products/p104 (3).jpg, assets/products/p104 (4).jpg, assets/products/p104 (5).jpg, assets/products/p104 (6).jpg, assets/products/p104 (7).jpg, assets/products/p104 (8).jpg
 Video: 
-Description: A genuine pre-owned MIZUNO Morelia Neo IV in Black & Red.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p105
 Name: UMBRO Tocco Pro
