@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="assets/logo.png" alt="Sultan Football Cleats crest" />
           <strong>Sultan Football Cleats</strong>
         </div>
-        <p class="footer-note">Genuine, pre-loved football boots from Nike, Adidas, Puma and more. Every pair is a unique single unit — condition-checked and honestly listed. Rs. 300 flat delivery all over Pakistan.</p>
+        <p class="footer-note">Genuine football boots from Nike, Adidas, Puma and more, plus grip socks, shin pads and other accessories. Pre-loved pairs are condition-checked and honestly listed. Rs. 300 delivery all over Pakistan.</p>
       </div>
       <div class="footer-col">
         <h4>Shop</h4>

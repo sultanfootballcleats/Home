@@ -18,7 +18,7 @@ const STORE = {
   currencySymbolUSD: "$",
   currencySymbolPKR: "Rs. ",
   usdToPkr: 278, // approximate reference rate — update as needed
-  deliveryPKR: 300, // delivery charge per pair
+  deliveryPKR: 300, // delivery charge per pair of boots (an accessories-only order pays one flat charge — see cartDeliveryInfo)
   nayapayNumber: "03295336020",
   jazzcashNumber: "03329022264",
 };
@@ -91,6 +91,9 @@ const PRODUCT_FIELD_MAP = {
   image: "image",
   video: "video",
   description: "desc",
+  quantity: "stock",
+  stock: "stock",
+  "in stock": "stock",
 };
 
 function normalizeFieldKey(rawKey) {
@@ -122,6 +125,11 @@ function parseProductsText(text) {
     if (!raw.id || !raw.name) return; // skip incomplete/malformed blocks
 
     const category = (raw.category || "").trim();
+    // "Condition: New" (or "Brand New") marks unused stock such as new socks or shin pads.
+    // "Quantity: 5" says how many are in stock; leave it out and it is a single unique item.
+    const conditionText = String(raw.conditionRaw || "").trim();
+    const isNew = /^(brand\s*)?new\b/i.test(conditionText);
+    const stockNum = parseInt(raw.stock, 10);
     const priceNum = parseFloat(String(raw.priceRaw || "").replace(/,/g, ""));
     const originalNum = raw.originalPriceRaw
       ? parseFloat(String(raw.originalPriceRaw).replace(/,/g, ""))
@@ -145,7 +153,10 @@ function parseProductsText(text) {
       sizeUS: raw.sizeUS || "",
       sizeUK: raw.sizeUK || "",
       sizeEUR: raw.sizeEUR || "",
-      condition: parseFloat(raw.conditionRaw) || 0,
+      condition: isNew ? 10 : parseFloat(raw.conditionRaw) || 0,
+      isNew,
+      stock: isNaN(stockNum) ? 1 : Math.max(0, stockNum),
+      isFootwear: !!productType(category),
       fault: raw.fault && raw.fault.trim() ? raw.fault.trim() : "NONE",
       price: isNaN(priceNum) ? 0 : priceNum / STORE.usdToPkr,
       originalPrice: originalNum && !isNaN(originalNum) ? originalNum / STORE.usdToPkr : null,
@@ -206,6 +217,30 @@ function renderStars(condition) {
 window.renderStars = renderStars;
 window.conditionToStars = conditionToStars;
 
+// Used wherever a product shows its condition: stars for pre-loved items, a
+// "Brand New" badge for new stock (Condition: New in data/products.txt).
+function conditionHTML(p) {
+  if (p && p.isNew) return '<span class="new-badge">Brand New</span>';
+  return renderStars(p ? p.condition : 0);
+}
+// Size badges for product cards. Items without sizes (e.g. a football) show none.
+function sizeBadgesHTML(p) {
+  if (!p || (!p.sizeUK && !p.sizeEUR)) return "";
+  return `<div class="card-size-row">${p.sizeUK ? `<span class="card-size-badge">UK ${p.sizeUK}</span>` : ""}${p.sizeEUR ? `<span class="card-size-badge">EUR ${p.sizeEUR}</span>` : ""}</div>`;
+}
+// "Size US 9 / UK 8 / EUR 43", or "" when the product has no sizes.
+function sizeLabel(p) {
+  if (!p) return "";
+  const bits = [];
+  if (p.sizeUS) bits.push(`US ${p.sizeUS}`);
+  if (p.sizeUK) bits.push(`UK ${p.sizeUK}`);
+  if (p.sizeEUR) bits.push(`EUR ${p.sizeEUR}`);
+  return bits.length ? `Size ${bits.join(" / ")}` : "";
+}
+window.conditionHTML = conditionHTML;
+window.sizeBadgesHTML = sizeBadgesHTML;
+window.sizeLabel = sizeLabel;
+
 /* ---------------------------------- Filter helpers ---------------------------------- */
 function uniqueBrands() {
   return Array.from(new Set(PRODUCTS.map((p) => p.brand).filter(Boolean))).sort();
@@ -257,29 +292,66 @@ function saveCart(cart) {
   document.dispatchEvent(new CustomEvent("cartchange"));
 }
 function cartCount() {
-  return getCart().length;
+  return getCart().reduce((n, i) => n + (i.qty || 1), 0);
 }
 function cartTotal() {
   return getCart().reduce((sum, item) => {
     const p = getProduct(item.id);
-    return p ? sum + p.price : sum;
+    return p ? sum + p.price * (item.qty || 1) : sum;
   }, 0);
 }
+// Delivery: STORE.deliveryPKR per pair of boots. An order with no boots in it
+// (accessories only) pays one flat delivery charge; accessories ordered together
+// with boots add nothing extra. Change the rule here if your delivery pricing differs.
+function cartDeliveryInfo() {
+  let footwear = 0;
+  let any = false;
+  getCart().forEach((item) => {
+    const p = getProduct(item.id);
+    if (!p) return;
+    any = true;
+    if (p.isFootwear) footwear += item.qty || 1;
+  });
+  const sym = STORE.currencySymbolPKR;
+  if (!any) return { pkr: 0, label: "" };
+  if (footwear > 0) {
+    return { pkr: STORE.deliveryPKR * footwear, label: `${sym}${STORE.deliveryPKR}/- per pair × ${footwear}` };
+  }
+  return { pkr: STORE.deliveryPKR, label: `flat ${sym}${STORE.deliveryPKR}/- for accessories` };
+}
 function cartDeliveryUSD() {
-  return getCart().length ? (STORE.deliveryPKR * getCart().length) / STORE.usdToPkr : 0;
+  return cartDeliveryInfo().pkr / STORE.usdToPkr;
 }
 function cartGrandTotal() {
   return cartTotal() + cartDeliveryUSD();
 }
-// Every product is a single unique physical pair — there is no "quantity"
-// beyond 1, and no size variant to key on. addToCart returns false (and adds
-// nothing) if the pair is already in the cart, since a second one doesn't exist.
+// A product's "Quantity" in data/products.txt (default 1) caps how many of it can be
+// in the cart. addToCart returns false (and adds nothing) once that cap is reached.
 function addToCart(id) {
+  const p = getProduct(id);
+  const stock = p ? p.stock : 1;
   const cart = getCart();
-  if (cart.some((i) => i.id === id)) return false;
-  cart.push({ id, qty: 1 });
+  const existing = cart.find((i) => i.id === id);
+  if (existing) {
+    if ((existing.qty || 1) >= stock) return false;
+    existing.qty = (existing.qty || 1) + 1;
+  } else {
+    if (stock < 1) return false;
+    cart.push({ id, qty: 1 });
+  }
   saveCart(cart);
   return true;
+}
+function setCartQty(id, qty) {
+  const p = getProduct(id);
+  const max = p ? p.stock : 1;
+  let cart = getCart();
+  const item = cart.find((i) => i.id === id);
+  if (!item) return;
+  const n = Math.min(max, Math.floor(qty));
+  if (n >= 1) item.qty = n;
+  else cart = cart.filter((i) => i.id !== id);
+  saveCart(cart);
 }
 function removeFromCart(id) {
   const cart = getCart().filter((i) => i.id !== id);
@@ -305,20 +377,22 @@ function buildWhatsAppOrderMessage(customer) {
   cart.forEach((item) => {
     const p = getProduct(item.id);
     if (!p) return;
-    lines.push(`• ${p.name} — Size US ${p.sizeUS} / UK ${p.sizeUK} / EUR ${p.sizeEUR} — ${formatPrice(p.price, { primaryOnly: true })}`);
+    const qty = item.qty || 1;
+    const size = sizeLabel(p);
+    lines.push(`• ${p.name}${qty > 1 ? ` × ${qty}` : ""}${size ? ` — ${size}` : ""} — ${formatPrice(p.price * qty, { primaryOnly: true })}`);
   });
   lines.push("");
   lines.push(`Subtotal: ${formatPrice(cartTotal(), { primaryOnly: true })}`);
-  const deliveryPairs = cart.length;
-  const deliveryTotalPKR = STORE.deliveryPKR * deliveryPairs;
-  lines.push(`Delivery: ${STORE.currencySymbolPKR}${deliveryTotalPKR.toLocaleString('en-US')}/- (${STORE.currencySymbolPKR}${STORE.deliveryPKR}/- per pair × ${deliveryPairs} pair${deliveryPairs === 1 ? '' : 's'})`);
+  const delivery = cartDeliveryInfo();
+  const deliveryText = `${STORE.currencySymbolPKR}${delivery.pkr.toLocaleString('en-US')}/-`;
+  lines.push(`Delivery: ${deliveryText} (${delivery.label})`);
   lines.push(`Total: ${formatPrice(cartGrandTotal(), { primaryOnly: true })}`);
   lines.push("");
   lines.push(`Name: ${customer.name || ""}`);
   lines.push(`Phone: ${customer.phone || ""}`);
   lines.push(`Delivery address: ${customer.address || ""}`);
   lines.push("");
-  lines.push(`I'll send the Rs. ${STORE.deliveryPKR}/- per pair delivery charge and share the payment screenshot here.`);
+  lines.push(`I'll send the ${deliveryText} delivery charge and share the payment screenshot here.`);
   return lines.join("\n");
 }
 function whatsAppOrderLink(customer) {

@@ -3,12 +3,12 @@
   const grid = document.getElementById("productGrid");
   if (!grid) return;
   window.wireProductCardLinks(grid);
+
   // The search term comes from the URL (?q=...) and the search box, so it must be escaped
-  // before being placed into innerHTML (otherwise ?q=<img onerror=...> runs script).
+  // before going into innerHTML (otherwise ?q=<img onerror=...> would run script).
   function escapeHTML(str) {
     return String(str).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
-
 
   window.PRODUCTS_READY.then(() => {
     const pillsWrap = document.getElementById("filterPills");
@@ -155,11 +155,8 @@
           <div class="product-body">
             <span class="product-cat">${p.categoryLabel}</span>
             <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
-            ${window.renderStars(p.condition)}
-            <div class="card-size-row">
-              <span class="card-size-badge">UK ${p.sizeUK}</span>
-              <span class="card-size-badge">EUR ${p.sizeEUR}</span>
-            </div>
+            ${window.conditionHTML(p)}
+            ${window.sizeBadgesHTML(p)}
             <div class="product-price-row">
               <span class="price" data-price="${p.price}"></span>
             </div>
@@ -243,7 +240,7 @@
       if (!list.length) {
         grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1;">
           <div class="crown-mark">${window.ICONS.crown}</div>
-          <h3>${searchTerm ? `No pairs match "${escapeHTML(searchTerm)}"` : "No pairs match these filters right now"}</h3>
+          <h3>${searchTerm ? `No items match "${escapeHTML(searchTerm)}"` : "No items match these filters right now"}</h3>
           <p>${searchTerm ? "Try a different name, brand, or size." : "Try loosening a filter, or check back soon."}</p>
         </div>`;
       } else {

@@ -27,7 +27,7 @@
 
     const conditionNote = product.fault && product.fault.trim().toUpperCase() !== "NONE"
       ? product.fault
-      : "No notable faults";
+      : (product.isNew ? "Brand new" : "No notable faults");
 
     root.innerHTML = `
       <div class="pdp-gallery">
@@ -45,23 +45,23 @@
         </div>
         <p class="pdp-desc">${product.desc}</p>
 
-        <div class="pdp-block">
-          <label>Size (this pair only — single unique unit in stock)</label>
+        ${product.sizeUS || product.sizeUK || product.sizeEUR ? `<div class="pdp-block">
+          <label>${product.isFootwear && product.stock <= 1 ? "Size (this pair only — single unique unit in stock)" : "Size"}</label>
           <div class="size-grid">
-            <span class="size-opt selected" style="cursor:default;">US ${product.sizeUS}</span>
-            <span class="size-opt selected" style="cursor:default;">UK ${product.sizeUK}</span>
-            <span class="size-opt selected" style="cursor:default;">EUR ${product.sizeEUR}</span>
+            ${product.sizeUS ? `<span class="size-opt selected" style="cursor:default;">US ${product.sizeUS}</span>` : ""}
+            ${product.sizeUK ? `<span class="size-opt selected" style="cursor:default;">UK ${product.sizeUK}</span>` : ""}
+            ${product.sizeEUR ? `<span class="size-opt selected" style="cursor:default;">EUR ${product.sizeEUR}</span>` : ""}
           </div>
-        </div>
+        </div>` : ""}
 
         <div class="pdp-block">
           <label>Condition</label>
-          <div class="condition-row">${window.renderStars(product.condition)}</div>
+          <div class="condition-row">${window.conditionHTML(product)}</div>
           <p class="pdp-desc" style="margin:8px 0 0;">${conditionNote}</p>
         </div>
 
         <div class="pdp-actions">
-          <button class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
+          <button class="btn btn-primary" id="addToCartBtn" ${product.stock < 1 ? "disabled" : ""}>${product.stock < 1 ? "Sold Out" : "Add to Cart"}</button>
           <a class="btn btn-whatsapp" id="enquireBtn" href="#" target="_blank" rel="noopener">
             Ask on WhatsApp
           </a>
@@ -71,10 +71,12 @@
         </div>
 
         <ul class="pdp-meta-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Nationwide delivery — Rs. ${window.STORE.deliveryPKR}/- per pair, cash on delivery available</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> One-of-a-kind pair — once it's sold, it's gone</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Nationwide delivery — ${product.isFootwear ? `Rs. ${window.STORE.deliveryPKR}/- per pair` : `flat Rs. ${window.STORE.deliveryPKR}/- on accessories-only orders (no extra charge when ordered with boots)`}, cash on delivery available</li>
+          ${product.stock > 1 ? `<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ${product.stock} in stock</li>` : product.isFootwear ? `<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> One-of-a-kind pair — once it's sold, it's gone</li>` : ""}
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Order confirmed directly with our team on WhatsApp</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span>Exchange or return within 7 days if damaged or the wrong size (unused shoe). <a href="policy.html" style="text-decoration:underline;">Read the full policy</a></span></li>
+          ${product.isFootwear
+            ? `<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span>Exchange or return within 7 days if damaged or the wrong size (unused shoe). <a href="policy.html" style="text-decoration:underline;">Read the full policy</a></span></li>`
+            : `<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span>See our <a href="policy.html" style="text-decoration:underline;">exchange &amp; refund policy</a></span></li>`}
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span>Please record a continuous video of the parcel unboxing — required for damaged-product returns or exchanges</span></li>
         </ul>
       </div>
@@ -132,6 +134,10 @@
       const added = addToCart(product.id);
       if (added) {
         showToast(`Added ${product.name} to cart`);
+      } else if (product.stock < 1) {
+        showToast(`${product.name} is sold out`);
+      } else if (product.stock > 1) {
+        showToast(`You already have all ${product.stock} in your cart`);
       } else {
         showToast(`${product.name} is already in your cart`);
       }
@@ -156,11 +162,8 @@
           <div class="product-body">
             <span class="product-cat">${p.categoryLabel}</span>
             <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
-            ${window.renderStars(p.condition)}
-            <div class="card-size-row">
-              <span class="card-size-badge">UK ${p.sizeUK}</span>
-              <span class="card-size-badge">EUR ${p.sizeEUR}</span>
-            </div>
+            ${window.conditionHTML(p)}
+            ${window.sizeBadgesHTML(p)}
             <div class="product-price-row">
               <span class="price" data-price="${p.price}"></span>
             </div>

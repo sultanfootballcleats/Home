@@ -15,6 +15,11 @@
     }
 
     function render() {
+      // Keep quantities within current stock (e.g. if stock was reduced since the item was added).
+      getCart().forEach((i) => {
+        const p = getProduct(i.id);
+        if (p && (i.qty || 1) > Math.max(p.stock, 1)) setCartQty(i.id, Math.max(p.stock, 1));
+      });
       const cart = getCart();
       if (!cart.length) {
         tableWrap.style.display = "none";
@@ -35,6 +40,11 @@
           const p = getProduct(item.id);
           if (!p) return "";
           const href = `product.html?id=${p.id}`;
+          const qty = item.qty || 1;
+          const size = window.sizeLabel(p);
+          const qtyCell = p.stock > 1
+            ? `<div class="qty-control"><button type="button" data-action="dec" aria-label="Decrease quantity" ${qty <= 1 ? "disabled" : ""}>−</button><span aria-live="polite">${qty}</span><button type="button" data-action="inc" aria-label="Increase quantity" ${qty >= p.stock ? "disabled" : ""}>+</button></div>`
+            : `<span class="qty-static">1</span>`;
           return `
           <tr class="cart-row" data-id="${p.id}">
             <td>
@@ -44,12 +54,14 @@
                 </a>
                 <div>
                   <h4><a href="${href}">${p.name}</a></h4>
-                  <span>Size US ${p.sizeUS} / UK ${p.sizeUK} / EUR ${p.sizeEUR} · ${p.categoryLabel}</span><br/>
+                  <span>${size ? size + " · " : ""}${p.categoryLabel}</span><br/>
+                  ${qty > 1 ? `<span><span data-price-primary="${p.price}"></span> each</span><br/>` : ""}
                   <a class="remove-link" href="#" data-action="remove">Remove</a>
                 </div>
               </div>
             </td>
-            <td class="cart-price" data-price="${p.price}"></td>
+            <td class="cart-qty">${qtyCell}</td>
+            <td class="cart-price" data-price="${p.price * qty}"></td>
           </tr>`;
         })
         .join("");
@@ -57,19 +69,20 @@
       tableWrap.innerHTML = `
         <table class="cart-table">
           <thead>
-            <tr><th>Product</th><th>Price</th></tr>
+            <tr><th>Product</th><th>Qty</th><th>Price</th></tr>
           </thead>
           <tbody>${rows}</tbody>
         </table>`;
 
       const subtotal = cartTotal();
       const total = cartGrandTotal();
+      const delivery = cartDeliveryInfo();
       summaryCard.innerHTML = `
         <h3>Order Summary</h3>
         <div class="summary-row"><span>Subtotal</span><span data-price-primary="${subtotal}"></span></div>
-        <div class="summary-row"><span>Delivery (Rs. 300/- per pair × ${cart.length})</span><span>${STORE.currencySymbolPKR}${(STORE.deliveryPKR * cart.length).toLocaleString("en-US")}/-</span></div>
+        <div class="summary-row"><span>Delivery (${delivery.label})</span><span>${STORE.currencySymbolPKR}${delivery.pkr.toLocaleString("en-US")}/-</span></div>
         <div class="summary-row total"><span>Total</span><span data-price-primary="${total}"></span></div>
-        <p class="summary-note">Fill in your details above, then tap below to send your order to our team on WhatsApp. Each item here is a single unique pair, so it's reserved for you as soon as we confirm on WhatsApp.</p>
+        <p class="summary-note">Fill in your details above, then tap below to send your order to our team on WhatsApp. Your items are reserved for you as soon as we confirm on WhatsApp.</p>
         <button class="btn btn-whatsapp btn-block" id="checkoutBtn" type="button">Send Order on WhatsApp</button>
         <a class="btn btn-outline btn-block" href="shop.html" style="margin-top:10px;">Continue Shopping</a>
       `;
@@ -149,7 +162,12 @@
       const action = e.target.closest("[data-action]");
       if (!row || !action) return;
       e.preventDefault();
-      if (action.dataset.action === "remove") removeFromCart(row.dataset.id);
+      const id = row.dataset.id;
+      const current = getCart().find((i) => i.id === id);
+      const qty = current ? current.qty || 1 : 1;
+      if (action.dataset.action === "remove") removeFromCart(id);
+      else if (action.dataset.action === "inc") setCartQty(id, qty + 1);
+      else if (action.dataset.action === "dec") setCartQty(id, qty - 1);
       render();
     });
 
