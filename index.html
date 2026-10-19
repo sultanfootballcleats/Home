@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sultan Football Cleats — Genuine Pre-Loved Boots</title>
-<meta name="description" content="Sultan Football Cleats — genuine, pre-loved original football boots from Nike, Adidas, Puma and more. Adult and kids' studs and grippers, every pair a unique single unit." />
+<title>Sultan Football Cleats — Football Boots &amp; Gear</title>
+<meta name="description" content="Sultan Football Cleats — genuine football boots from Nike, Adidas, Puma and more, plus grip socks, shin pads and other accessories. Adult and kids' studs and grippers, pre-loved pairs each a unique single unit." />
 <link rel="icon" href="assets/logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,7 +54,7 @@
     <div>
       <span class="eyebrow">Sultan Football Cleats</span>
       <h1>Genuine Boots,<br><em>One</em> of a Kind</h1>
-      <p>Pre-loved, original football boots from Nike, Adidas, Puma and more — studs and grippers for adults and kids. Every pair is a single unique unit and size, hand-picked and condition-checked before it's listed.</p>
+      <p>Original football boots from Nike, Adidas, Puma and more — studs and grippers for adults and kids — plus grip socks, shin pads and other gear to go with them. Pre-loved pairs are single unique units, hand-picked and condition-checked before they're listed.</p>
       <div class="hero-ctas">
         <a href="shop.html" class="btn btn-steel">Shop the Collection</a>
         <a href="about.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.4); color:#fff;">Our Story</a>
@@ -78,7 +78,7 @@
     </div>
     <div class="feature-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><h4>Condition Rated</h4><p>Every pair listed with an honest condition score and any faults disclosed.</p></div>
+      <div><h4>Condition Rated</h4><p>Every pre-loved pair listed with an honest condition score and any faults disclosed. New gear is clearly marked.</p></div>
     </div>
     <div class="feature-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h2l2.4 12.4a2 2 0 002 1.6h8.4a2 2 0 002-1.6L21 8H6"/></svg>
@@ -160,11 +160,8 @@ window.PRODUCTS_READY.then(function(){
       <div class="product-body">
         <span class="product-cat">${p.categoryLabel}</span>
         <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
-        ${renderStars(p.condition)}
-        <div class="card-size-row">
-          <span class="card-size-badge">UK ${p.sizeUK}</span>
-          <span class="card-size-badge">EUR ${p.sizeEUR}</span>
-        </div>
+        ${conditionHTML(p)}
+        ${sizeBadgesHTML(p)}
         <div class="product-price-row"><span class="price" data-price="${p.price}"></span></div>
         <a class="btn btn-outline btn-block" href="product.html?id=${p.id}">View Details</a>
       </div>
