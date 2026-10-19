@@ -945,3 +945,14 @@ h1,h2,h3,h4{
 @media (max-width:980px){
   .pdp-gallery-main{ padding:0; }
 }
+
+/* ---- Accessories: "Brand New" badge and cart quantity controls ---- */
+.new-badge{ display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--royal); background:rgba(37,67,140,.08); border:1px solid rgba(37,67,140,.25); border-radius:999px; padding:3px 10px; }
+.cart-qty{ white-space:nowrap; }
+.qty-control{ display:inline-flex; align-items:center; border:1px solid var(--line); border-radius:var(--radius-sm); overflow:hidden; background:#fff; }
+.qty-control button{ width:34px; height:34px; border:0; background:transparent; font-size:1.1rem; cursor:pointer; color:var(--ink); }
+.qty-control button:hover:not(:disabled){ background:var(--steel-100); }
+.qty-control button:disabled{ opacity:.35; cursor:not-allowed; }
+.qty-control span{ min-width:34px; text-align:center; font-weight:700; }
+.qty-static{ font-weight:700; }
+@media (max-width:700px){ .cart-qty::before{ content:"Qty: "; font-size:.8rem; color:var(--ink-muted); } }
