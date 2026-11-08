@@ -113,7 +113,7 @@ Product ID: p4
 Name: ADIDAS Nitrocharge 1.0
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black, Silver, Orange & Green
 Size US: 11.5
 Size UK: 11
@@ -124,7 +124,7 @@ Price (PKR): 2800
 Original Price (PKR): 4999
 Image: assets/products/p4 (1).jpg, assets/products/p4 (2).jpg, assets/products/p4 (3).jpg, assets/products/p4 (4).jpg, assets/products/p4 (5).jpg, assets/products/p4 (6).jpg, assets/products/p4 (7).jpg, assets/products/p4 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS Nitrocharge 1.0 in Black, Silver, Orange & Green.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p5
 Name: ADIDAS Predator 19.3
@@ -521,7 +521,7 @@ Product ID: p28
 Name: NIKE Mercurial Vapor 14
 Brand: NIKE
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: White with Blue NIKE logo
 Size US: 7
 Size UK: 6
@@ -532,7 +532,7 @@ Price (PKR): 3500
 Original Price (PKR): 6500
 Image: assets/products/p28 (1).jpg, assets/products/p28 (2).jpg, assets/products/p28 (3).jpg, assets/products/p28 (4).jpg, assets/products/p28 (5).jpg, assets/products/p28 (6).jpg, assets/products/p28 (7).jpg, assets/products/p28 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Mercurial Vapor 14 in White with Blue NIKE logo.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p29
 Name: PUMA Future Ultimate
@@ -1048,7 +1048,7 @@ Product ID: p60
 Name: ADIDAS Ace 15.1
 Brand: ADIDAS
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black & Yellow
 Size US: 8.5
 Size UK: 8
@@ -1059,7 +1059,7 @@ Price (PKR): 4000
 Original Price (PKR): 6599
 Image: assets/products/p60 (1).jpg, assets/products/p60 (2).jpg, assets/products/p60 (3).jpg, assets/products/p60 (4).jpg, assets/products/p60 (5).jpg, assets/products/p60 (6).jpg, assets/products/p60 (7).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS Ace 15.1 in Black & Yellow.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p61
 Name: NIKE Phantom GT2
@@ -1167,7 +1167,7 @@ Product ID: p67
 Name: ADIDAS AdiPure 11Pro
 Brand: ADIDAS
 Category: adult-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Black & Lime Green
 Size US: 9.5
 Size UK: 9
@@ -1178,7 +1178,7 @@ Price (PKR): 4500
 Original Price (PKR): 6500
 Image: assets/products/p67 (1).jpg, assets/products/p67 (2).jpg, assets/products/p67 (3).jpg, assets/products/p67 (4).jpg, assets/products/p67 (5).jpg, assets/products/p67 (6).jpg, assets/products/p67 (7).jpg, assets/products/p67 (8).jpg
 Video: 
-Description: A genuine pre-owned ADIDAS AdiPure 11Pro in Black & Lime Green.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p68
 Name: NIKE Phantom GT2
@@ -1388,7 +1388,7 @@ Product ID: p80
 Name: NIKE Mercurial Vortex II
 Brand: NIKE
 Category: adult-grippers
-Tag: 
+Tag: ⭕SOLD
 Color: Pink to Yellow Gradient
 Size US: 10
 Size UK: 9
@@ -1399,7 +1399,7 @@ Price (PKR): 4000
 Original Price (PKR): 6500
 Image: assets/products/p80 (1).jpg, assets/products/p80 (2).jpg, assets/products/p80 (3).jpg, assets/products/p80 (4).jpg, assets/products/p80 (5).jpg, assets/products/p80 (6).jpg, assets/products/p80 (7).jpg, assets/products/p80 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Mercurial Vortex II in Pink to Yellow Gradient.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p81
 Name: NIKE Elastico Finale
