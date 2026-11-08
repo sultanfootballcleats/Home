@@ -848,11 +848,11 @@ Tag:
 Color: Blue & White
 Size US: 7.5
 Size UK: 7
-Size EUR: 40.5
+Size EUR: 40.66
 Condition (out of 10): 10
 Fault: None
-Price (PKR): 4500
-Original Price (PKR): 5999
+Price (PKR): 5500
+Original Price (PKR): 7999
 Image: assets/products/p47 (1).jpg, assets/products/p47 (2).jpg, assets/products/p47 (3).jpg, assets/products/p47 (4).jpg, assets/products/p47 (5).jpg, assets/products/p47 (6).jpg, assets/products/p47 (7).jpg, assets/products/p47 (8).jpg
 Video: 
 Description: A genuine pre-owned ADIDAS X19.3 in Blue & White.
