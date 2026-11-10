@@ -997,7 +997,7 @@ Product ID: p57
 Name: NIKE Tiempo Legend 10
 Brand: NIKE
 Category: adult-studs
-Tag: 
+Tag: ⭕SOLD
 Color: White & Red
 Size US: 11
 Size UK: 10
@@ -1008,7 +1008,7 @@ Price (PKR): 3500
 Original Price (PKR): 5600
 Image: assets/products/p57 (1).jpg, assets/products/p57 (2).jpg, assets/products/p57 (3).jpg, assets/products/p57 (4).jpg, assets/products/p57 (5).jpg, assets/products/p57 (6).jpg, assets/products/p57 (7).jpg, assets/products/p57 (8).jpg
 Video: 
-Description: A genuine pre-owned NIKE Tiempo Legend 10 in White & Red.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p58
 Name: NIKE Hypervenom Phelon II
