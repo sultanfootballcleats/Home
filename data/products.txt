@@ -147,7 +147,7 @@ Product ID: p6
 Name: CANTERBURY Phoenix Raze SG
 Brand: CANTERBURY
 Category: kids-studs
-Tag: 
+Tag: ⭕SOLD
 Color: Black & White logo
 Size US: 6
 Size UK: 5.5
@@ -158,7 +158,7 @@ Price (PKR): 2800
 Original Price (PKR): 4300
 Image: assets/products/p6 (1).jpg, assets/products/p6 (2).jpg, assets/products/p6 (3).jpg, assets/products/p6 (4).jpg, assets/products/p6 (5).jpg, assets/products/p6 (6).jpg, assets/products/p6 (7).jpg, assets/products/p6 (8).jpg
 Video: 
-Description: A genuine pre-owned CANTERBURY Phoenix Raze SG in Black & White logo.
+Description: ⭕SOLD
 ----------------------------------------
 Product ID: p7
 Name: CLARKS Award Swift
